@@ -7,12 +7,12 @@
 
 body {
   color: white;
-  background: #090909;
+  background: #080808;
   font-family: 'default-font', 'Roboto', helvetica, arial, sans-serif;
   font-size: 20px;
   line-height: 1.15;
   overflow-x: hidden;
-  width:100vw;
+  width:100% !important;
   padding: 108px 1vw 0 1vw;
   margin: 0;
   overflow-y: scroll;
@@ -23,8 +23,15 @@ a {
   color:#ffffca;
 }
 
+a.anchor {
+    display: block;
+    position: relative;
+    top: -88px;
+    visibility: hidden;
+}
+
 header{
-  background: #3c3c3c;
+  background: #0000ff;
   font-weight: 400;
   font-size: 32px;
   line-height: 64px;
@@ -44,6 +51,7 @@ header{
   line-height: 64px;
 }
 .homenav a {
+  position: relative;
   color: white;
   text-decoration:none;
   margin: 0 0.25px;
@@ -51,25 +59,51 @@ header{
   border-radius: 10px;
   padding: 10px 12px;
 }
-.homenav a:hover {
+
+/* .homenav a:hover {
   color:black;
-  background: rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.5);
   border-radius: 10px;
-  border: 1px solid black;
-  box-shadow: inset 0 0 4px #000000;
+  border: 1px solid white;
+  box-shadow: inset 0 0 4px white;
   border-radius: 10px;
   padding: 10px 12px;
+} */
+
+.homenav a:hover::after {
+  content: "";
+  position: absolute;
+  top: 90%;
+  right: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  margin: 0 auto;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 15px solid white;
 }
 
 .homenav .current, .homenav .current a {
-  color: black;
-  background: rgba(255,255,255,0.3);
-  border: 1px solid rgba(0,0,0,0);
-  border-radius: 10px;
-  padding: 10px 12px;
+  color: #c6c6c6;
+}
+
+.homenav .current::after {
+  content: "";
+  position: absolute;
+  top: 90%;
+  right: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  margin: 0 auto;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 15px solid #080808;
 }
 
 .sticker {
+  background: #000000;
   padding:1vh 2vw;
   box-shadow:0 0 12px 6px rgba(255,255,255,0.3);
 }
@@ -77,4 +111,43 @@ header{
 h1 {
   font-size:36px;
   line-height: 40px;
+}
+
+.newsticker {
+  position: relative;
+  background: #3c3c3c;
+  color: white;
+  width: auto;
+  max-height: 80%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  padding: 1vh 1vw;
+  border-radius: 4px;
+  box-shadow: inset 0 0 2px #000000;
+}
+
+.newsticker .newsentry {
+  position: relative;
+  padding: 1vh 0.5vw;
+  margin: 0 0 5px 0;
+}
+
+.newsentry:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  width: auto;
+  height: 2px;
+  background: radial-gradient(#1a1a1a, transparent);
+}
+
+.newsdate {
+  font-weight: 500;
+  font-style: italic;
+}
+.newsdate::after {
+  content: ": ";
 }
