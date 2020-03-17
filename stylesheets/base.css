@@ -13,7 +13,7 @@ body {
   line-height: 1.15;
   overflow-x: hidden;
   width:100% !important;
-  padding: 108px 1vw 0 1vw;
+  padding: 13vh 2vw 0 2vw;
   margin: 0;
   overflow-y: scroll;
 }
@@ -42,15 +42,15 @@ img {
 a.anchor {
     display: block;
     position: relative;
-    top: -88px;
+    top: -12vh;
     visibility: hidden;
 }
 
 header{
   background: #0000ff;
   font-weight: 400;
-  font-size: 32px;
-  line-height: 64px;
+  font-size: 5vh;
+  line-height: 8vh;
   color: white;
   width: 97%;
   position: fixed;
@@ -63,8 +63,8 @@ header{
 .headnav {
   float: right;
   color: white;
-  font-size: 26px;
-  line-height: 64px;
+  font-size: 3vh;
+  line-height: 8vh;
 }
 .headnav a {
   position: relative;
@@ -85,9 +85,9 @@ header{
   width: 0;
   height: 0;
   margin: 0 auto;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 15px solid white;
+  border-left: 2.5vmin solid transparent;
+  border-right: 2.5vmin solid transparent;
+  border-bottom: 3vmin solid white;
 }
 
 .headnav .current, .headnav .current a {
@@ -103,9 +103,9 @@ header{
   width: 0;
   height: 0;
   margin: 0 auto;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 15px solid #080808;
+  border-left: 2.5vmin solid transparent;
+  border-right: 2.5vmin solid transparent;
+  border-bottom: 3vmin solid #080808;
 }
 
 .sticker {
@@ -115,16 +115,29 @@ header{
 }
 
 h1 {
-  font-size:36px;
-  line-height: 40px;
+  font-size:4vmin;
+  line-height: 2.15;
+  margin: 0;
+}
+
+h2 {
+  font-size: 3.5vmin;
+  line-height: 2;
+  margin: 0;
+}
+
+h3 {
+  font-size: 3vmin;
+  line-height: 2;
+  margin: 0;
 }
 
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1s;
+  -webkit-animation-duration: 0.3s;
   animation-name: fade;
-  animation-duration: 1s;
+  animation-duration: 0.3s;
 }
 
 @-webkit-keyframes fade {

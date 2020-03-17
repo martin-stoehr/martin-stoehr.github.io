@@ -15,7 +15,6 @@
 .newsticker .newsentry {
   position: relative;
   padding: 1vh 0.5vw;
-  margin: 0 0 5px 0;
 }
 
 .newsentry:after {
@@ -55,6 +54,13 @@
   border: 2px solid white;
 }
 
+.slideshow-canvas {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
 /* Next & previous buttons for slideshow */
 .prev-slide, .next-slide {
   cursor: pointer;
@@ -67,14 +73,14 @@
   width: auto;
   color: black;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
   transition: 0.3s ease;
   user-select: none;
 }
 
 /* move "previous button" left */
 .prev-slide {
-  right: 39px;
+  right: 50px;
 }
 
 /* On hover, turn yellow and cast shadow */
@@ -83,16 +89,38 @@
   text-shadow: 0 0 2px #000000;
 }
 
+/* pause/play buttons */
+.pause, .play {
+  cursor: pointer;
+  display: none;
+  color: black;
+  position: absolute;
+  font-size: 25px;
+  bottom: 4px;
+  right: 24px;
+}
+
+.pause {
+  margin-right: 4px;
+  display: block;
+}
+
+.pause:hover, .play:hover {
+  color: #f0ff00;
+  text-shadow: 0 0 2px #000000;
+}
+
 /* slide counter */
 .slide-counter {
   position: absolute;
-  bottom: 5px;
-  right: 18px;
+  bottom: 6px;
+  right: 20px;
   margin: 0;
   padding: 0;
   width: auto;
   color: black;
-  font-size: 15px;
+  font-size: 17px;
+  font-weight: 450;
   transition: 0.3s ease;
   user-select: none;
 }
