@@ -50,37 +50,79 @@
   width: auto;
   height: auto;
   margin: auto;
-  background: white;
-  border: 2px solid white;
+  background: transparent;
+  /*border: 2px solid white;*/
 }
 
 .slideshow-canvas {
   position: relative;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.slideshow-canvas img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* metallic look */
+.metallic {
+  outline: none;
+  color: hsla(0,0%,20%,1);
+  background-color: hsl(0,0%,90%);
+  box-shadow: inset hsla(0,0%,15%,  1) 0 0 0, /* border */
+    inset hsla(0,0%,15%, .8) 0 -1px 5px 2px, /* soft SD */
+    inset hsla(0,0%,0%, .25) 0 -1px 0px 2px, /* bottom SD */
+    inset hsla(0,0%,100%,.7) 0  2px 1px 4px, /* top HL */
+    /*hsla(0,0%, 0%,.15) 0 -5px 4px 2px, /* outer SD */
+    /*hsla(0,0%,100%,.5) 0 0 1px 1px;*/
+}
+
+.metallic.linear {
+  overflow: hidden;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+    background-image: -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%, .1) 7.5%),
+      -webkit-repeating-linear-gradient(left, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   4%, hsla(0,0%,  0%,.03) 4.5%),
+      -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.1) 2.2%),
+      linear-gradient(180deg, hsl(0,0%,70%)  0%,
+      hsl(0,0%,85%) 47%,
+      hsl(0,0%,78%) 72%,
+      hsl(0,0%,55%) 100%);
+}
+
+/* media controls */
+.media-control {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: auto;
+  height: 4.5vh;
   text-align: center;
+  text-shadow: hsla(0,0%,40%,.5) 0 -1px 0, hsla(0,0%,100%,.6) 0 2px 1px;
+  padding: 0 0.6vw;
+  z-index: 1;
 }
 
 /* Next & previous buttons for slideshow */
 .prev-slide, .next-slide {
   cursor: pointer;
-  position: absolute;
-  bottom: 6px;
-  right: 6px;
-  padding: 0 4px;
+  position: relative;
+  float: left;
+  left: 0;
+  bottom: 2px;
+  padding: 0;
   margin: 0;
-  right: 0;
   width: auto;
   color: black;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 2.5vh;
+  line-height: 4.5vh;
   transition: 0.3s ease;
   user-select: none;
-}
-
-/* move "previous button" left */
-.prev-slide {
-  right: 50px;
 }
 
 /* On hover, turn yellow and cast shadow */
@@ -89,19 +131,34 @@
   text-shadow: 0 0 2px #000000;
 }
 
+.autoplay-container {
+  position: relative;
+  float: left;
+  bottom: 2px;
+  left: 0;
+  padding: 0;
+  margin: auto;
+  width: 2.1vw;
+  height: 4.5vh;
+  line-height: 4.5vh;
+}
+
 /* pause/play buttons */
 .pause, .play {
   cursor: pointer;
   display: none;
   color: black;
   position: absolute;
-  font-size: 25px;
-  bottom: 4px;
-  right: 24px;
+  left: 0.1vw;
+  width: 2vw;
+  font-size: 3.5vh;
+  line-height: 4.5vh;
+  bottom: 1px;
+  transition: 0.3s ease;
 }
 
 .pause {
-  margin-right: 4px;
+  left: 0;
   display: block;
 }
 
