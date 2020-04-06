@@ -14,13 +14,14 @@ body {
   color: white;
   background: #080808;
   font-family: 'default-font', 'Roboto', helvetica, arial, sans-serif;
-  font-size: 20px;
+  font-size: 2.5vmin;
   line-height: 1.15;
   overflow-x: hidden;
   width:100% !important;
   padding: 13vh 2vw 0 2vw;
   margin: 0;
   overflow-y: scroll;
+  text-align: justify;
 }
 
 .note, .note p {
@@ -72,6 +73,7 @@ header{
   left: 0;
   padding: 0 2vw;
   overflow-y:hidden;
+  z-index: 9999;
 }
 
 .headnav {
@@ -126,24 +128,35 @@ header{
   background: #000000;
   padding:1vh 2vw;
   box-shadow:0 0 12px 6px rgba(255,255,255,0.3);
+  overflow: hidden;
 }
 
 h1 {
   font-size:4vmin;
   line-height: 2.15;
   margin: 0;
+  font-weight: 600;
 }
 
 h2 {
   font-size: 3.5vmin;
   line-height: 2;
   margin: 0;
+  font-weight: 550;
 }
 
 h3 {
   font-size: 3vmin;
   line-height: 2;
   margin: 0;
+  font-weight: 550;
+}
+
+h4 {
+  font-size: 2.6vmin;
+  line-height: 2.1;
+  margin: 0;
+  font-weight: 450;
 }
 
 .sketch-border {

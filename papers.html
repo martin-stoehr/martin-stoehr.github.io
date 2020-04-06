@@ -7,12 +7,12 @@
 
     <!-- CSS Base -->
     <link rel="stylesheet" type='text/css' media='all' href="stylesheets/base.css"/>
+    <link rel="stylesheet" type='text/css' media='all' href="stylesheets/papers.css"/>
   </head>
 
   <body>
     <main>
       <header>
-        <b>Martin Stöhr</b>
         <nav class="headnav">
           <a href="index.html">Home</a>
           <a href="cur_vit.html">CV</a>
@@ -22,89 +22,52 @@
         </nav>
       </header>
 
-      <div class="sticker" style="width:92%;padding-bottom:4vh">
+      <div class="sticker" style="width:92%">
+        <a class="anchor" id="JCP20"></a>
+        <div class="toc-img-container">
+          <img src="img/DFTBplus_release.png" alt="wordcloud of DFTB+ capabilities forming DFTB+ logo"
+               style="height:50vh">
+        </div>
+        <div class="abstract-container">
+          <p class="papertitle">
+            DFTB+, a software package for efficient approximate density functional theory based atomistic simulations
+          </p>
+          <p class="paperinfo">
+            B. Hourahine, <i>et al.</i>: <i>The Journal of Chemical Physics</i> <b>152</b>, 124101 (2020); doi: <a href="https://doi.org/10.1063/1.5143190">10.1063/1.5143190</a>
+          </p>
+          DFTB+ is a versatile community developed open source software package offering fast and efficient methods for carrying out atomistic quantum mechanical simulations. By implementing various methods approximating density functional theory (DFT), such as the density functional based tight binding (DFTB) and the extended tight binding method, it enables simulations of large systems and long timescales with reasonable accuracy while being considerably faster for typical simulations than the respective ab initio methods. Based on the DFTB framework, it additionally offers approximated versions of various DFT extensions including hybrid functionals, time dependent formalism for treating excited systems, electron transport using non-equilibrium Green’s functions, and many more. DFTB+ can be used as a user-friendly standalone application in addition to being embedded into other software packages as a library or acting as a calculation-server accessed by socket communication. We give an overview of the recently developed capabilities of the DFTB+ code, demonstrating with a few use case examples, discuss the strengths and weaknesses of the various features, and also discuss on-going developments and possible future perspectives.
+        </div>
+      </div>
+      <div class="sticker" style="width:92%;margin:4vh 0 0 0;padding-bottom:4vh">
         <a class="anchor" id="SciAdv19"></a>
-        <h2>Quantum mechanics of proteins in explicit water: The role of plasmon-like solute-solvent interactions</h2>
-        <h3><i>M. Stöhr and A. Tkatchenko:</i> Science Advances 5, eaax0024 (2019); doi:
-          <a href="https://doi.org/10.1126/sciadv.aax0024">10.1126/sciadv.aax0024</a></h3>
-          Quantum-mechanical van der Waals dispersion interactions play an essential role in intraprotein and protein-water interactions
-          &ndash; the two main factors affecting the structure and dynamics of proteins in water. Typically, these interactions are only
-          treated phenomenologically, via pairwise potential terms in classical force fields. Here, we use an explicit quantum-mechanical
-          approach of density-functional tight-binding combined with the many-body dispersion formalism and demonstrate the relevance
-          of many-body van der Waals forces both to protein energetics and to protein-water interactions. In contrast to commonly used
-          pairwise approaches, many-body effects substantially decrease the relative stability of native states in the absence of water.
-          Upon solvation, the protein-water dispersion interaction counteracts this effect and stabilizes native conformations and transition
-          states. These observations arise from the highly delocalized and collective character of the interactions, suggesting a remarkable
-          persistence of electron correlation through aqueous environments and providing the basis for long-range interaction mechanisms
-          in biomolecular systems.
+        <h3>Quantum mechanics of proteins in explicit water: The role of plasmon-like solute-solvent interactions</h3>
+        <h4>M. Stöhr and A. Tkatchenko: <i>Science Advances</i> <b>5</b>, eaax0024 (2019); doi:
+          <a href="https://doi.org/10.1126/sciadv.aax0024">10.1126/sciadv.aax0024</a></h4>
+        Quantum-mechanical van der Waals dispersion interactions play an essential role in intraprotein and protein-water interactions &ndash; the two main factors affecting the structure and dynamics of proteins in water. Typically, these interactions are only treated phenomenologically, via pairwise potential terms in classical force fields. Here, we use an explicit quantum-mechanical approach of density-functional tight-binding combined with the many-body dispersion formalism and demonstrate the relevance of many-body van der Waals forces both to protein energetics and to protein-water interactions. In contrast to commonly used pairwise approaches, many-body effects substantially decrease the relative stability of native states in the absence of water. Upon solvation, the protein-water dispersion interaction counteracts this effect and stabilizes native conformations and transition states. These observations arise from the highly delocalized and collective character of the interactions, suggesting a remarkable persistence of electron correlation through aqueous environments and providing the basis for long-range interaction mechanisms in biomolecular systems.
       </div>
       <div class="sticker" style="margin:4vh 0 0 0;width:92%;padding-bottom:4vh">
         <a class="anchor" id="ChemSocRev19"></a>
-        <h2>Theory and practice of modeling van der Waals interactions in electronic-structure calculations</h2>
-        <h3><i>M. Stöhr, T. Van Voorhis and A. Tkatchenko:</i> Chemical Society Reviews 48, 4118–4154 (2019); doi:
-          <a href="https://doi.org/10.1039/C9CS00060G">10.1039/C9CS00060G</a></h3>
-          The accurate description of long-range electron correlation, most prominently including van der Waals (vdW) dispersion interactions,
-          represents a particularly challenging task in the modeling of molecules and materials. vdW forces arise from the interaction of
-          quantum-mechanical fluctuations in the electronic charge density. Within (semi-)local density functional approximations or
-          Hartree–Fock theory such interactions are neglected altogether. Non-covalent vdW interactions, however, are ubiquitous in nature
-          and play a key role for the understanding and accurate description of the stability, dynamics, structure, and response properties in a
-          plethora of systems. During the last decade, many promising methods have been developed for modeling vdW interactions in
-          electronic-structure calculations. These methods include vdW-inclusive Density Functional Theory and correlated
-          post-Hartree-Fock approaches. Here, we focus on the methods within the framework of Density Functional Theory, including
-          non-local van der Waals density functionals, interatomic dispersion models within many-body and pairwise formulation, and
-          random phase approximation-based approaches. This review aims to guide the reader through the theoretical foundations of
-          these methods in a tutorial-style manner and, in particular, highlight practical aspects such as the applicability and the advantages
-          and shortcomings of current vdW-inclusive approaches. In addition, we give an overview of complementary experimental approaches,
-          and discuss tools for the qualitative understanding of non-covalent interactions as well as energy decomposition techniques.
-          Besides representing a reference for the current state-of-the-art, this work is thus also designed as a concise and detailed introduction
-          to vdW-inclusive electronic structure calculations for a general and broad audience.
+        <h3>Theory and practice of modeling van der Waals interactions in electronic-structure calculations</h3>
+        <h4>M. Stöhr, T. Van Voorhis and A. Tkatchenko: <i>Chemical Society Reviews</i> <b>48</b>, 4118&ndash;4154 (2019); doi: <a href="https://doi.org/10.1039/C9CS00060G">10.1039/C9CS00060G</a></h4>
+        The accurate description of long-range electron correlation, most prominently including van der Waals (vdW) dispersion interactions, represents a particularly challenging task in the modeling of molecules and materials. vdW forces arise from the interaction of quantum-mechanical fluctuations in the electronic charge density. Within (semi-)local density functional approximations or Hartree–Fock theory such interactions are neglected altogether. Non-covalent vdW interactions, however, are ubiquitous in nature and play a key role for the understanding and accurate description of the stability, dynamics, structure, and response properties in a plethora of systems. During the last decade, many promising methods have been developed for modeling vdW interactions in electronic-structure calculations. These methods include vdW-inclusive Density Functional Theory and correlated post-Hartree-Fock approaches. Here, we focus on the methods within the framework of Density Functional Theory, including non-local van der Waals density functionals, interatomic dispersion models within many-body and pairwise formulation, and random phase approximation-based approaches. This review aims to guide the reader through the theoretical foundations of these methods in a tutorial-style manner and, in particular, highlight practical aspects such as the applicability and the advantages and shortcomings of current vdW-inclusive approaches. In addition, we give an overview of complementary experimental approaches, and discuss tools for the qualitative understanding of non-covalent interactions as well as energy decomposition techniques. Besides representing a reference for the current state-of-the-art, this work is thus also designed as a concise and detailed introduction to vdW-inclusive electronic structure calculations for a general and broad audience.
       </div>
       <div class="sticker" style="margin:4vh 0 0 0;width:92%;padding-bottom:4vh">
         <a class="anchor" id="PRL18"></a>
-        <h2>Quantum-Mechanical Relation between Atomic Dipole Polarizability and the van der Waals Radius</h2>
-        <h3><i>D. V. Fedorov, M. Sadhukhan, M. Stöhr, and A. Tkatchenko:</i> Physical Review Letters 121, 183401 (2018); doi:
-          <a href="https://doi.org/10.1103/PhysRevLett.121.183401">10.1103/PhysRevLett.121.183401</a></h3>
-          The atomic dipole polarizability &alpha; and the van der Waals (vdW) radius RvdW are two key quantities to describe
-          vdW interactions between atoms in molecules and materials. Until now, they have been determined independently and
-          separately from each other. Here, we derive the quantum-mechanical relation
-          R<sub style="line-height:0">vdW</sub> = const. &times; &alpha;<sup style="line-height:0">1/7</sup>, which is markedly
-          different from the common assumption R<sub style="line-height:0">vdW</sub> &propto; &alpha;<sup style="line-height:0">1/3</sup>
-          based on a classical picture of hard-sphere atoms. As shown for 72 chemical elements between hydrogen and uranium, the
-          obtained formula can be used as a unified definition of the vdW radius solely in terms of the atomic polarizability. For vdW-bonded
-          heteronuclear dimers consisting of atoms A and B, the combination rule
-          &alpha; = (&alpha;<sub style="line-height:0">A</sub> + &alpha;<sub style="line-height:0">B</sub>)/2 provides a remarkably accurate
-          way to calculate their equilibrium interatomic distance. The revealed scaling law allows us to reduce the empiricism and improve the
-          accuracy of interatomic vdW potentials, at the same time suggesting the existence of a nontrivial relation between length and volume
-          in quantum systems.
+        <h3>Quantum-Mechanical Relation between Atomic Dipole Polarizability and the van der Waals Radius</h3>
+        <h4>D. V. Fedorov, M. Sadhukhan, M. Stöhr, and A. Tkatchenko: <i>Physical Review Letters</i> <b>121</b>, 183401 (2018); doi: <a href="https://doi.org/10.1103/PhysRevLett.121.183401">10.1103/PhysRevLett.121.183401</a></h4>
+        The atomic dipole polarizability &alpha; and the van der Waals (vdW) radius RvdW are two key quantities to describe vdW interactions between atoms in molecules and materials. Until now, they have been determined independently and separately from each other. Here, we derive the quantum-mechanical relation R<sub style="line-height:0">vdW</sub> = const. &times; &alpha;<sup style="line-height:0">1/7</sup>, which is markedly different from the common assumption R<sub style="line-height:0">vdW</sub> &propto; &alpha;<sup style="line-height:0">1/3</sup> based on a classical picture of hard-sphere atoms. As shown for 72 chemical elements between hydrogen and uranium, the obtained formula can be used as a unified definition of the vdW radius solely in terms of the atomic polarizability. For vdW-bonded heteronuclear dimers consisting of atoms A and B, the combination rule &alpha; = (&alpha;<sub style="line-height:0">A</sub> + &alpha;<sub style="line-height:0">B</sub>)/2 provides a remarkably accurate way to calculate their equilibrium interatomic distance. The revealed scaling law allows us to reduce the empiricism and improve the accuracy of interatomic vdW potentials, at the same time suggesting the existence of a nontrivial relation between length and volume in quantum systems.
       </div>
       <div class="sticker" style="margin:4vh 0 0 0;width:92%;padding-bottom:4vh">
         <a class="anchor" id="JCP16"></a>
-        <h2>Communication: Charge-Population Based Dispersion Interactions for Molecules and Materials</h2>
-        <h3><i>M. Stöhr, G. S. Michelitsch, J. C. Tully, K. Reuter, and R. J. Maurer:</i> The Journal of Chemical Physics 144, 151101 (2016);
-          doi: <a href="https://doi.org/10.1063/1.4947214">10.1063/1.4947214</a></h3>
-        We introduce a system-independent method to derive effective atomic C<sub style="line-height:0">6</sub> coefficients and
-        polarizabilities in molecules and materials purely from charge population analysis. This enables the use of dispersion-correction
-        schemes in electronic structure calculations without recourse to electron-density partitioning schemes and expands their
-        applicability to semi-empirical methods and tight-binding Hamiltonians. We show that the accuracy of our method is en par with
-        established electron-density partitioning based approaches in describing intermolecular C<sub style="line-height:0">6</sub>
-        coefficients as well as dispersion energies of weakly bound molecular dimers, organic crystals, and supramolecular complexes.
-        We showcase the utility of our approach by incorporation of the recently developed many-body dispersion method
-        [Tkatchenko <i>et al.</i>, Phys. Rev. Lett. 108, 236402 (2012)] into the semi-empirical density functional tight-binding method and
-        propose the latter as a viable technique to study hybrid organic-inorganic interfaces.
+        <h3>Communication: Charge-Population Based Dispersion Interactions for Molecules and Materials</h3>
+        <h4>M. Stöhr, G. S. Michelitsch, J. C. Tully, K. Reuter, and R. J. Maurer: <i>The Journal of Chemical Physics</i> <b>144</b>, 151101 (2016); doi: <a href="https://doi.org/10.1063/1.4947214">10.1063/1.4947214</a></h4>
+        We introduce a system-independent method to derive effective atomic C<sub style="line-height:0">6</sub> coefficients and polarizabilities in molecules and materials purely from charge population analysis. This enables the use of dispersion-correction schemes in electronic structure calculations without recourse to electron-density partitioning schemes and expands their applicability to semi-empirical methods and tight-binding Hamiltonians. We show that the accuracy of our method is en par with established electron-density partitioning based approaches in describing intermolecular C<sub style="line-height:0">6</sub> coefficients as well as dispersion energies of weakly bound molecular dimers, organic crystals, and supramolecular complexes. We showcase the utility of our approach by incorporation of the recently developed many-body dispersion method [Tkatchenko <i>et al., Phys. Rev. Lett.</i> </b>108</b>, 236402 (2012)] into the semi-empirical density functional tight-binding method and propose the latter as a viable technique to study hybrid organic-inorganic interfaces.
       </div>
       <div class="sticker" style="margin:4vh 0;width:92%;padding-bottom:4vh">
         <a class="anchor" id="NanoLett16"></a>
-        <h2>Dynamics of Spatially Confined Bisphenol A Trimers in a Unimolecular Network on Ag(111)</h2>
-        <h3><i>J. A. Lloyd, et al.:</i> Nano Letters 16(3), 1884&ndash;1889 (2016); doi:
-          <a href="https://doi.org/10.1021/acs.nanolett.5b05026">10.1021/acs.nanolett.5b05026</a></h3>
-          Bisphenol A (BPA) aggregates on Ag(111) shows a polymorphism between two supramolecular motifs leading to formation of
-          distinct networks depending on thermal energy. With rising temperature a dimeric pairing scheme reversibly converts into a trimeric
-          motif, which forms a hexagonal superstructure with complex dynamic characteristics. The trimeric arrangements notably organize
-          spontaneously into a self-assembled one-component array with supramolecular BPA rotors embedded in a two-dimensional stator
-          sublattice. By varying the temperature, the speed of the rotors can be controlled as monitored by direct visualization. A combination
-          of scanning tunneling microscopy and dispersion-corrected density-functional tight-binding (DFTB-vdW<sup style="line-height:0">surf</sup>)
-          based molecular modeling reveals the exact atomistic position of each molecule within the assembly as well as the driving force for
-          the formation of the supramolecular rotors.
+        <h3>Dynamics of Spatially Confined Bisphenol A Trimers in a Unimolecular Network on Ag(111)</h3>
+        <h4>J. A. Lloyd, <i>et al.</i>: <i>Nano Letters</i> <b>16</b>(3), 1884&ndash;1889 (2016); doi: <a href="https://doi.org/10.1021/acs.nanolett.5b05026">10.1021/acs.nanolett.5b05026</a></h4>
+        Bisphenol A (BPA) aggregates on Ag(111) shows a polymorphism between two supramolecular motifs leading to formation of distinct networks depending on thermal energy. With rising temperature a dimeric pairing scheme reversibly converts into a trimeric motif, which forms a hexagonal superstructure with complex dynamic characteristics. The trimeric arrangements notably organize spontaneously into a self-assembled one-component array with supramolecular BPA rotors embedded in a two-dimensional stator sublattice. By varying the temperature, the speed of the rotors can be controlled as monitored by direct visualization. A combination of scanning tunneling microscopy and dispersion-corrected density-functional tight-binding (DFTB-vdW<sup style="line-height:0">surf</sup>) based molecular modeling reveals the exact atomistic position of each molecule within the assembly as well as the driving force for the formation of the supramolecular rotors.
       </div>
     </main>
   </body>
