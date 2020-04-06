@@ -18,9 +18,16 @@
   float: left;
   text-align: justify;
   width: 76%;
-  padding-left: 2%;
   padding-top: 2vh;
   padding-bottom: 2vh;
+}
+
+.abstract-container.imgleft {
+  padding-left: 2%;
+}
+
+.abstract-container.imgright {
+  padding-right: 2%;
 }
 
 .abstract-container .papertitle {
