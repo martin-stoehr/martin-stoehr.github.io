@@ -11,14 +11,14 @@
 }
 
 body {
-  color: white;
-  background: #080808;
+  color: black;
+  background: white;
   font-family: 'default-font', 'Roboto', helvetica, arial, sans-serif;
   font-size: 2.5vmin;
   line-height: 1.15;
   overflow-x: hidden;
   width:100% !important;
-  padding: 13vh 2vw 0 2vw;
+  padding: 12vh 2vw 0 2vw;
   margin: 0;
   overflow-y: scroll;
   text-align: justify;
@@ -35,7 +35,7 @@ p {
 
 a {
   text-decoration: none;
-  color:#ffffca;
+  color:#0000ff;
 }
 
 img {
@@ -62,7 +62,7 @@ a.anchor {
 }
 
 header{
-  background: #0000ff;
+  background: #1696a0;
   font-weight: 400;
   font-size: 5vh;
   line-height: 8vh;
@@ -107,7 +107,7 @@ header{
 }
 
 .headnav .current, .headnav .current a {
-  color: #cfcfcf;
+  color: black;
 }
 
 .headnav .current::after {
@@ -125,9 +125,9 @@ header{
 }
 
 .sticker {
-  background: #000000;
+  background: white;
   padding:1vh 2vw;
-  box-shadow:0 0 12px 6px rgba(255,255,255,0.3);
+  box-shadow:0 0 6px 3px rgba(0,0,0,0.3);
   overflow: hidden;
 }
 
@@ -163,7 +163,7 @@ h4 {
   position: relative;
   text-align:middle;
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-  border: 8px solid white;
+  border: 8px solid black;
   padding: -5px;
   overflow: hidden;
   margin:auto;

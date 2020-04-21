@@ -1,7 +1,7 @@
 .newsticker {
   position: relative;
-  background: #3c3c3c;
-  color: white;
+  background: #f4f4f4;
+  color: black;
   width: auto;
   max-height: 80%;
   overflow-x: hidden;
@@ -28,6 +28,10 @@
   background: radial-gradient(#1a1a1a, transparent);
 }
 
+.newsentry a{
+  font-style: italic;
+}
+
 .newsdate {
   font-weight: 500;
   font-style: italic;
@@ -48,10 +52,9 @@
 .slideshow-container {
   position: relative;
   width: auto;
-  height: auto;
+  height: 80%;
   margin: auto;
   background: transparent;
-  /*border: 2px solid white;*/
 }
 
 .slideshow-canvas {
@@ -68,6 +71,16 @@
   bottom: 0;
 }
 
+.slideshow-canvas .frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:transparent;
+  z-index: 9999;
+}
+
 /* metallic look */
 .metallic {
   outline: none;
@@ -77,21 +90,19 @@
     inset hsla(0,0%,15%, .8) 0 -1px 5px 2px, /* soft SD */
     inset hsla(0,0%,0%, .25) 0 -1px 0px 2px, /* bottom SD */
     inset hsla(0,0%,100%,.7) 0  2px 1px 4px, /* top HL */
-    /*hsla(0,0%, 0%,.15) 0 -5px 4px 2px, /* outer SD */
-    /*hsla(0,0%,100%,.5) 0 0 1px 1px;*/
 }
 
 .metallic.linear {
   overflow: hidden;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-    background-image: -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%, .1) 7.5%),
-      -webkit-repeating-linear-gradient(left, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   4%, hsla(0,0%,  0%,.03) 4.5%),
-      -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.1) 2.2%),
-      linear-gradient(180deg, hsl(0,0%,70%)  0%,
-      hsl(0,0%,85%) 47%,
-      hsl(0,0%,78%) 72%,
-      hsl(0,0%,55%) 100%);
+  background-image: -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%, .1) 7.5%),
+    -webkit-repeating-linear-gradient(left, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   4%, hsla(0,0%,  0%,.03) 4.5%),
+    -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.1) 2.2%),
+    linear-gradient(180deg, hsl(0,0%,70%)  0%,
+    hsl(0,0%,85%) 47%,
+    hsl(0,0%,78%) 72%,
+    hsl(0,0%,55%) 100%);
 }
 
 /* media controls */
@@ -105,6 +116,7 @@
   text-shadow: hsla(0,0%,40%,.5) 0 -1px 0, hsla(0,0%,100%,.6) 0 2px 1px;
   padding: 0 0.6vw;
   z-index: 1;
+  border: 1px solid #000000;
 }
 
 /* Next & previous buttons for slideshow */
@@ -185,10 +197,20 @@
 /* slide caption */
 .slide-caption {
   color: black;
-  font-size: 18px;
-  padding: 0 12px;
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.9),
+    inset 0 0 2px rgba(255, 255, 255, 0.9);
+  font-size: 2.2vh;
+  line-height: 1.15;
   position: absolute;
-  bottom: 6px;
-  width: 40%;
-  text-align: left;
+  bottom: 0;
+  right: 0;
+  padding: 1%;
+  width: 42.5%;
+  text-align: right;
+}
+
+.slide-caption .title {
+  font-weight: 500;
+  font-size: 2.3vh;
 }
