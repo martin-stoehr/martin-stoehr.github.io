@@ -39,7 +39,7 @@ function currentSlide(n){
 // make current slide visible
 function showSlides(n){
   var i;
-  var allSlides = document.getElementsByClassName("slides");
+  var allSlides = document.getElementsByClassName("slide");
   if (n > allSlides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = allSlides.length}
   for (i = 0; i < allSlides.length; i++) {

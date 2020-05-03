@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>CV | Martin Stöhr Scholarly Profile</title>
     <meta name="description" content="Scholarly Profile and Research of Martin Stöhr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS Base -->
     <link rel="stylesheet" type='text/css' media='all' href="stylesheets/base.css"/>
@@ -12,37 +13,47 @@
   <body>
     <main>
       <header>
-        <nav class="headnav">
-          <a href="index.html">Home</a>
-          <a href="cur_vit.html" class="current">CV</a>
-          <a href="papers.html">Publications</a>
-          <a href="codes.html">Software</a>
-          <a href="info.html">About Me</a>
+        <nav id="head-nav" class="headnav">
+          <div class="naventry"><a href="index.html">Home</a></div>
+          <div class="naventry"><a href="cur_vit.html" class="current">CV</a></div>
+          <div class="naventry"><a href="papers.html">Publications</a></div>
+          <div class="naventry"><a href="codes.html">Software</a></div>
+          <div class="naventry"><a href="info.html">About Me</a></div>
         </nav>
+        <div class="navbtn" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
       </header>
 
-      <div class="sticker" style="width:92%;height:50vh;">
+      <div class="sticker row first left">
         <a class="anchor" id="edu"></a>
         <h1>Education</h1>
         work in progress...
       </div>
-      <div class="sticker" style="margin:4vh 0 0 0;width:92%;height:30vh">
+      <div class="sticker row first right">
         <h1>Professional Experience</h1>
         work in progress...
       </div>
-      <div class="sticker" style="margin:4vh 0 0 0;width:92%;height:30vh">
-        <h1>Publications</h1>
+      <div class="sticker row left">
+        <h1>Most Relevant Publications</h1>
         work in progress...
       </div>
-      <div class="sticker" style="margin:4vh 0 0 0;width:92%;height:30vh">
+      <div class="sticker row right">
         <h1>Workshops &amp; Conferences</h1>
         work in progress...
       </div>
-      <div class="sticker" style="margin:4vh 0;width:92%;height:30vh">
+      <div class="sticker row last left">
         <h1>Awards &amp; Grants</h1>
+        work in progress...
+      </div>
+      <div class="sticker row last right">
+        <h1>Worth Mentioning...</h1>
         work in progress...
       </div>
     </main>
   </body>
 
+  <script src="include/mobile-header.js" defer> </script>
 </html>

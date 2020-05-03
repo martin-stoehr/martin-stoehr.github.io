@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Home | Martin Stöhr Scholarly Profile</title>
     <meta name="description" content="Scholarly Profile and Research of Martin Stöhr">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <!-- preloads -->
@@ -20,60 +20,63 @@
 
   <body>
     <header>
-      <nav class="headnav">
-        <a href="index.html" class="current">Home</a>
-        <a href="cur_vit.html">CV</a>
-        <a href="papers.html">Publications</a>
-        <a href="codes.html">Software</a>
-        <a href="info.html">About Me</a>
+      <nav id="head-nav" class="headnav">
+        <div class="naventry"><a href="index.html" class="current">Home</a></div>
+        <div class="naventry"><a href="cur_vit.html">CV</a></div>
+        <div class="naventry"><a href="papers.html">Publications</a></div>
+        <div class="naventry"><a href="codes.html">Software</a></div>
+        <div class="naventry"><a href="info.html">About Me</a></div>
       </nav>
+      <div class="navbtn" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
     </header>
 
-    <div class="sticker" style="width:55%;height:80vh;float:left;margin-right:1%">
+    <div class="sticker highlight-canvas">
       <h1>Research Highlights</h1>
       <div class="slideshow-container">
         <div class="slideshow-canvas">
-          <div class="slides fade">
-            <img src="img/HP35_artwork.png">
+          <div class="slide fade">
+            <img class="slide-img" src="img/HP35_artwork.png">
             <div class="protect-img"></div>
             <div class="slide-caption">
-              <span>(1/2)</span><br/>
+              <!--<span>(1/2) </span>-->
               <span class="title">The Quantum Nature of Proteins</span><br/>
                 Wavelike long-range van der Waals interactions persist to the length scales of solvated proteins.
             </div>
           </div>
-          <div class="slides fade">
-            <img src="img/overview-illustration.png">
+          <div class="slide fade">
+            <img class="slide-img" src="img/overview-illustration.png">
             <div class="protect-img"></div>
             <div class="slide-caption">
-              <span>(2/2)</span><br/>
+              <!--<span>(2/2) </span>-->
               <span class="title">From QHOs to Proteins</span><br/>
               Method developments and atomistic modeling across length scales in the TCP group.
             </div>
           </div>
         </div>
         <div class="media-control metallic linear">
+          <a class="pause" onclick="autoplayOFF()"><i class="fa fa-pause"></i></a>
+          <a class="play" onclick="autoplayON()"><i class="fa fa-play"></i></a>
           <a class="prev-slide" onclick="plusSlides(-1)">&#10094;</a>
-          <div class="autoplay-container">
-            <a class="pause" onclick="autoplayOFF()"><i class="fa fa-pause"></i></a>
-            <a class="play" onclick="autoplayON()"><i class="fa fa-play"></i></a>
-          </div>
           <a class="next-slide" onclick="plusSlides(1)">&#10095;</a>
         </div>
       </div>
     </div>
-    <div class="sticker" style="margin-left:1%;width:31%;height:80vh;float:left">
+
+    <div class="sticker news-canvas">
       <h1>What's new?</h1>
       <div class="newsticker" style="height:82.5%">
         <div class="newsentry"><span class="newsdate">03/2020</span>
-          DFT and beyond in the Tight-Binding approximation: The latest release of DFTB+ is summarized in our <a href="papers.html#JCP20">J. Chem. Phys. article</a>. Cheers, Ben and Bálint!
+          DFT and beyond in the Tight-Binding approximation: The latest release of DFTB+ is summarized in <a href="papers.html#JCP20">The Journal of Chemical Physics</a>. Cheers, Ben and Bálint!
         </div>
         <div class="newsentry"><span class="newsdate">12/2019</span>
           Check out our latest publication on <a href="papers.html#SciAdv19">"Quantum mechanics of proteins in explicit water: The role of plasmon-like solute-solvent interactions"</a> now published in Science Advances!
         </div>
         <div class="newsentry"><span class="newsdate">06/2019</span>
-          Wondering how to perform van der Waals-inclusive electronic structure calculations? Go check out our
-          <a href="papers.html#ChemSocRev19">review in Chemical Society Reviews</a>!
+          Wondering how to perform van der Waals-inclusive electronic structure calculations? Go check out our <a href="papers.html#ChemSocRev19">review in Chemical Society Reviews</a>!
         </div>
         <div class="newsentry"><span class="newsdate">11/2018</span>
           In <a href="papers.html#PRL18">our latest Physical Reviews Letter</a>, we present exciting insights into the relation of electronic properties and the "quantum-geometry" of atomic dimers.
@@ -85,16 +88,26 @@
           <a href="cur_vit.html#edu">New position!</a> Excited to join Prof. Alexandre Tkatchenko at the University of Luxembourg for my PhD studies!
         </div>
         <div class="newsentry"><span class="newsdate">04/2016</span>
-          Exploring van der Waals forces at new length-scales: In our Comminication, now
-          <a href="papers.html#JCP16">published in the Journal of Chemical Physics</a>, we present a seamless approach to couple <i>ab initio</i> van der Waals models with Density-Functional Tight-Binding. First first-author-paper &#x2714;
+          Exploring van der Waals forces at new length-scales: In our Comminication, now <a href="papers.html#JCP16">published in the Journal of Chemical Physics</a>, we present a seamless approach to couple <i>ab initio</i> van der Waals models with Density-Functional Tight-Binding. First first-author-paper &#x2714;
         </div>
         <div class="newsentry"><span class="newsdate">02/2016</span>
-          Observing molecular machines in action. We teamed up with our friends from E20 at the Physics Department to describe Bisphenol A self-assembling into a unimolecular network of molecular rotors in
-           <a href="papers.html#NanoLett16">Nano Letters</a>. First publication &#x2714;
-         </div>
+          Observing molecular machines in action. We teamed up with our friends from E20 at the Physics Department to describe Bisphenol A self-assembling into a unimolecular network of molecular rotors in <a href="papers.html#NanoLett16">Nano Letters</a>. First publication &#x2714;
+        </div>
       </div>
     </div>
 
+    <script src="include/mobile-header.js" defer> </script>
     <script src="include/slideshow.js" defer> </script>
+    <script type="text/javascript">
+      window.onload = function adaptSlidePos() {
+        if (window.innerWidth < 512) {
+          var slides = document.getElementsByClassName("slide");
+          for(var i = 0; i < slides.length; i++) {
+            var hc = slides[i].getElementsByClassName("slide-caption")[0].clientHeight;
+            slides[i].getElementsByClassName("slide-img")[0].style.bottom = hc+"px";
+          }
+        }
+      }
+    </script>
   </body>
 </html>

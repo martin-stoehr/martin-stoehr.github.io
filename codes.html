@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Software &amp; Codes | Martin Stöhr Scholarly Profile</title>
     <meta name="description" content="Scholarly Profile and Research of Martin Stöhr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS Base -->
     <link rel="stylesheet" type='text/css' media='all' href="stylesheets/base.css"/>
@@ -12,36 +13,42 @@
   <body>
     <main>
       <header>
-        <nav class="headnav">
-          <a href="index.html">Home</a>
-          <a href="cur_vit.html">CV</a>
-          <a href="papers.html">Publications</a>
-          <a href="codes.html" class="current">Software</a>
-          <a href="info.html">About Me</a>
+        <nav id="head-nav" class="headnav">
+          <div class="naventry"><a href="index.html">Home</a></div>
+          <div class="naventry"><a href="cur_vit.html">CV</a></div>
+          <div class="naventry"><a href="papers.html">Publications</a></div>
+          <div class="naventry"><a href="codes.html" class="current">Software</a></div>
+          <div class="naventry"><a href="info.html">About Me</a></div>
         </nav>
+        <div class="navbtn" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
       </header>
 
-      <div class="sticker" style="width:92%;padding-bottom:4vh">
+      <div class="sticker row first left">
         <h2>DFTB+</h2>
         description and links to come...
       </div>
-      <div class="sticker" style="margin:4vh 0 0 0;width:92%;padding-bottom:4vh">
+      <div class="sticker row first right">
         <h2>libMBD</h2>
         description and links to come...
       </div>
-      <div class="sticker" style="margin:4vh 0 0 0;width:92%;padding-bottom:4vh">
+      <div class="sticker row left">
         <h2>Hotbit</h2>
         description and links to come...
       </div>
-      <div class="sticker" style="margin:4vh 0 0 0;width:92%;padding-bottom:4vh">
+      <div class="sticker row right">
         <h2>Atomic Simulation Environment (ASE)</h2>
         description and links to come...
       </div>
-      <div class="sticker" style="margin:4vh 0 4vh 0;width:92%;padding-bottom:4vh">
+      <div class="sticker row last left" style="margin:4vh 0">
         <h2>FHI-Aims</h2>
         description and links to come...
       </div>
     </main>
   </body>
 
+  <script src="include/mobile-header.js" defer> </script>
 </html>

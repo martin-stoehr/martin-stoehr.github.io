@@ -1,0 +1,74 @@
+.mugshot-canvas {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 25%;
+}
+
+.mugshot-canvas p {
+  position: relative;
+  top: 2%;
+  left: 30%;
+  margin: 0;
+  font-size: 6vmin;
+}
+
+.mugshot {
+  vertical-align: middle;
+  max-height: 60%;
+  max-width: 60%;
+  margin: 30% 20% 4% 20%;
+  background: white
+}
+
+.info-canvas {
+  float: left;
+  position: relative;
+  width: 72%;
+  text-align: center;
+  padding: 0;
+}
+
+.info-box {
+  position: relative;
+  width: 85%;
+  margin: auto;
+  padding: 3vh 2vw 0 2vw;
+  font-size: 3vmin;
+  text-align: justify;
+}
+
+@media screen and (max-width:960px) {
+  .info-canvas {
+    width: 96%;
+    top: 2vh;
+  }
+
+  .info-box {
+    margin: 0;
+    top: 0;
+  }
+
+  .mugshot-canvas {
+    width: 96%;
+    height: 30%;
+    text-align: center;
+  }
+
+  .mugshot-canvas p {
+    position: relative;
+    float: left;
+    left: 25%;
+    text-align: left;
+    line-height: 30vh;
+  }
+
+  .mugshot {
+    top: 0;
+    left: 20%;
+    float: left;
+    margin: 0;
+    max-height: 30%;
+    max-width: 30%;
+  }
+}

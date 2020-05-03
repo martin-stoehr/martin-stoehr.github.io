@@ -17,7 +17,7 @@ body {
   font-size: 2.5vmin;
   line-height: 1.15;
   overflow-x: hidden;
-  width:100% !important;
+  width:95.5vw !important;
   padding: 12vh 2vw 0 2vw;
   margin: 0;
   overflow-y: scroll;
@@ -68,11 +68,12 @@ header{
   line-height: 8vh;
   color: white;
   width: 97%;
+  height: 8vh;
   position: fixed;
   top: 0;
   left: 0;
   padding: 0 2vw;
-  overflow-y:hidden;
+  overflow-y: hidden;
   z-index: 9999;
 }
 
@@ -82,6 +83,12 @@ header{
   font-size: 3vh;
   line-height: 8vh;
 }
+
+.headnav .naventry {
+  float: left;
+  background: #1696a0;
+}
+
 .headnav a {
   position: relative;
   color: black;
@@ -92,36 +99,103 @@ header{
   padding: 10px 12px;
 }
 
-.headnav a:hover::after {
-  content: "";
-  position: absolute;
-  top: 90%;
-  right: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  margin: 0 auto;
-  border-left: 2.5vmin solid transparent;
-  border-right: 2.5vmin solid transparent;
-  border-bottom: 3vmin solid black;
+@media screen and (max-width:768px) {
+  header {
+    overflow-y: visible;
+  }
+
+  .headnav {
+    position: fixed;
+    top: 8vh;
+    right: 0;
+    display: none;
+  }
+
+  .headnav, .naventry {
+    width: 160px;
+  }
+
+  .headnav a:hover {
+    color: white;
+  }
+
+  .naventry {
+    line-height: 5vh;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .headnav a:hover::after {
+    content: "";
+    position: absolute;
+    top: 90%;
+    right: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    border-left: 2.5vmin solid transparent;
+    border-right: 2.5vmin solid transparent;
+    border-bottom: 3vmin solid black;
+  }
+
+  .headnav .current::after {
+    content: "";
+    position: absolute;
+    top: 90%;
+    right: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    border-left: 2.5vmin solid transparent;
+    border-right: 2.5vmin solid transparent;
+    border-bottom: 3vmin solid white;
+  }
 }
 
 .headnav .current, .headnav .current a {
   color: white;
 }
 
-.headnav .current::after {
-  content: "";
-  position: absolute;
-  top: 90%;
+.navbtn {
+  display: inline-block;
+  cursor: pointer;
+  float: right;
   right: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  margin: 0 auto;
-  border-left: 2.5vmin solid transparent;
-  border-right: 2.5vmin solid transparent;
-  border-bottom: 3vmin solid white;
+  height: 8vh;
+  padding: 0;
+  margin: 0;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 4vmin;
+  height: 0.9vh;
+  background-color: black;
+  margin: 0.4vh 0;
+  transition: 0.4s;
+  border-radius: 10%;
+}
+.bar1 {
+  margin-top: 2vh;
+}
+.bar3 {
+  margin-bottom: 2vh;
+}
+
+.change .bar1 {
+  -webkit-transform: translate(0, 1.5vh);
+  transform: translate(0, 1.5vh);
+}
+.change .bar3 {
+  -webkit-transform: translate(0, -1.5vh);
+  transform: translate(0, -1.5vh);
+}
+
+@media screen and (min-width:768px) {
+  .navbtn {
+    display: none;
+  }
 }
 
 .sticker {
@@ -129,6 +203,43 @@ header{
   padding:1vh 2vw;
   box-shadow:0 0 6px 3px rgba(0,0,0,0.3);
   overflow: hidden;
+}
+
+.sticker.row {
+  margin: 4vh 0 0 0;
+  padding-bottom: 4vh;
+  float: left;
+  width: 96%;
+}
+
+.sticker.row.left {
+  float: left;
+  width: 45%;
+}
+
+.sticker.row.right {
+  float: right;
+  width: 45%;
+}
+
+.sticker.row.first {
+  margin: 0;
+}
+
+.sticker.row.last {
+  margin: 4vh 0;
+}
+
+@media screen and (max-width:960px) {
+  .sticker.row.left, .sticker.row.right {
+    width: 96%;
+  }
+  .sticker.row.first.right {
+    margin: 4vh 0 0 0;
+  }
+  .sticker.row.last.left {
+    margin: 4vh 0 0 0;
+  }
 }
 
 h1 {
