@@ -41,7 +41,7 @@
 }
 
 /* mobile portrait and eReader */
-@media screen and (min-aspect-ratio:1/2) and (max-aspect-ratio:3/5) {
+@media screen and (min-aspect-ratio:1/2) and (max-aspect-ratio:13/20) {
   .highlight-canvas {
     width: 96%;
     height: 50vh;
@@ -55,10 +55,10 @@
 }
 
 /* Tablet */
-@media screen and (min-aspect-ratio:3/5) and (max-aspect-ratio:1/1) {
+@media screen and (min-aspect-ratio:13/20) and (max-aspect-ratio:1/1) {
   .highlight-canvas {
     width: 96%;
-    height: 62vh;
+    height: 64vh;
   }
   
   .news-canvas {
