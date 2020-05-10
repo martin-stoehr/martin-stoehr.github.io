@@ -78,7 +78,7 @@ function adaptSlideImg() {
     var hcap = slides[i].getElementsByClassName("slide-caption")[0].clientHeight;
     var simg = slides[i].getElementsByClassName("slide-img")[0]
     var himg = simg.clientHeight;
-    if (himg+hcap < 1.05*hcan) {
+    if (himg+hcap < 1.01*hcan) {
       simg.style.bottom = hcap+"px";
     } else {
       simg.style.bottom = "0";
