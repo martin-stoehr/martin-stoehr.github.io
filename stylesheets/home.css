@@ -26,12 +26,12 @@
   }
 }
 
-@media screen and (max-width:540px),(max-aspect-ratio:3/5) {
+/*@media screen and (max-width:540px),(max-aspect-ratio:3/5) {
   .highlight-canvas {
     width: 96%;
     height: 80vh;
   }
-}
+}*/
 
 @media screen and (max-aspect-ratio:1/2) {
   .highlight-canvas {
