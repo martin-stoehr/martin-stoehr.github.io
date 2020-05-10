@@ -31,7 +31,7 @@ body {
   line-height: 1.15;
   overflow-x: hidden;
   width:95.5vw !important;
-  padding: calc(4vh + var(--base-header-height)) 2vw 0 2vw;
+  padding: calc(3.5vh + var(--base-header-height)) 2vw 0 2vw;
   margin: 0;
   overflow-y: scroll;
   text-align: justify;
@@ -70,7 +70,7 @@ img {
 a.anchor {
     display: block;
     position: relative;
-    top: calc(-4vh - var(--base-header-height));
+    top: calc(-3.5vh - var(--base-header-height));
     visibility: hidden;
 }
 
