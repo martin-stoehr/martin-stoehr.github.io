@@ -8,9 +8,9 @@
   --base-border-color: #000000;
 }
 
-@media screen and (max-width:680px) {
+@media screen and (max-width:540px) {
   :root {
-    --base-font-size: calc(0.7em + 0.4vmin);
+    --base-font-size: calc(0.6em + 0.4vmin);
   }
 }
 
