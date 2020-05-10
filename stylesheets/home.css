@@ -27,7 +27,7 @@
 }
 
 /* mobile portrait long*/
-@media screen and (max-aspect-ratio:1/2) {
+@media screen and (max-aspect-ratio:7/12) {
   .highlight-canvas {
     width: 96%;
     height: 45vh;
@@ -41,7 +41,7 @@
 }
 
 /* Tablets */
-@media screen and (min-aspect-ratio:1/2) and (max-aspect-ratio:9/10) {
+@media screen and (min-aspect-ratio:7/12) and (max-aspect-ratio:9/10) {
   .highlight-canvas {
     width: 96%;
     height: 60vh;
