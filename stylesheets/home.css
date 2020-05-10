@@ -44,7 +44,7 @@
 @media screen and (min-aspect-ratio:1/2) and (max-aspect-ratio:9/10) {
   .highlight-canvas {
     width: 96%;
-    height: 50vh;
+    height: 60vh;
   }
   
   .news-canvas {
