@@ -30,7 +30,11 @@
 
   .toc-img-container {
     text-align: center;
-    height: 38vh;
+    line-height: 1;
+    height: auto;
+  }
+  .toc-img-container img {
+      max-height: 38vh;
   }
 }
 
@@ -44,17 +48,17 @@
 
 .abstract-container .papertitle {
   text-align: left;
-  font-size: 3vmin;
+  font-size: calc(1.35 * var(--base-font-size));
   line-height: 1.5;
   margin: 0;
   font-weight: 550;
 }
 
 .abstract-container .paperinfo {
-  font-size: 2.6vmin;
+  font-size: calc(1.2 * var(--base-font-size));
   line-height: 1.3;
   margin: 0;
   font-weight: 450;
   padding-bottom: 1vh;
-  padding-top: 1vh;
+  padding-top: 0.5vh;
 }

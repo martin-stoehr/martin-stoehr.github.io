@@ -1,18 +1,19 @@
 .highlight-canvas {
   width: 57%;
   float: left;
-  height: 81vh;
+  height: 86vh;
   position: relative;
+  top: 0;
 }
 
 .news-canvas {
   width: 33%;
   float: right;
-  height: 81vh;
+  height: 86vh;
   position: relative;
 }
 
-@media screen and (max-width:960px) {
+@media screen and (max-width:960px),(max-aspect-ratio:8/5) {
   .highlight-canvas {
     width: 96%;
     height: 60vh;
@@ -25,12 +26,21 @@
   }
 }
 
+@media screen and (max-height:480px) {
+  .highlight-canvas {
+    height: 100vh;
+  }
+  .news-canvas {
+    height: 82vh;
+  }
+}
+
 .newsticker {
   position: relative;
   background: #f4f4f4;
   color: black;
   width: auto;
-  max-height: 100%;
+  max-height: calc(100% - calc(5.3 * var(--base-font-size)));
   overflow-x: hidden;
   overflow-y: scroll;
   scroll-behavior: smooth;
@@ -80,18 +90,18 @@
 .slideshow-container {
   position: relative;
   width: auto;
-  height: 80%;
+  height: calc(100% - calc(5.3 * var(--base-font-size)));
   margin: auto;
   background: transparent;
 }
 
 .slideshow-canvas {
-  position: relative;
+  position: absolute;
   width: 100%;
-  height: 100%;
+  height: calc(100% - 3.8vh);
   overflow: hidden;
   z-index: 10;
-  bottom: 0;
+  bottom: 3.8vh;
 }
 
 .slideshow-canvas .slide-img {
@@ -136,8 +146,8 @@
 
 /* media controls */
 .media-control {
-  position: relative;
-  top: 0%;
+  position: absolute;
+  bottom: 0;
   float: right;
   right: 0;
   width: 8vh;
@@ -230,7 +240,7 @@
   background: rgba(255, 255, 255, 0.75);
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.9),
     inset 0 0 2px rgba(255, 255, 255, 0.9);
-  font-size: 2.2vh;
+  /*font-size: 2.2vh;*/
   line-height: 1.15;
   position: absolute;
   bottom: 0;
@@ -240,7 +250,8 @@
   text-align: right;
 }
 
+
 .slide-caption .title {
   font-weight: 500;
-  font-size: 2.3vh;
+  /*font-size: 2.3vh;*/
 }

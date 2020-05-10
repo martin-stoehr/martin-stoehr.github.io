@@ -37,6 +37,12 @@
     <div class="sticker highlight-canvas">
       <h1>Research Highlights</h1>
       <div class="slideshow-container">
+        <div class="media-control metallic linear">
+          <a class="pause" onclick="autoplayOFF()"><i class="fa fa-pause"></i></a>
+          <a class="play" onclick="autoplayON()"><i class="fa fa-play"></i></a>
+          <a class="prev-slide" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next-slide" onclick="plusSlides(1)">&#10095;</a>
+        </div>
         <div class="slideshow-canvas">
           <div class="slide fade">
             <img class="slide-img" src="img/HP35_artwork.png">
@@ -56,12 +62,6 @@
               Method developments and atomistic modeling across length scales in the TCP group.
             </div>
           </div>
-        </div>
-        <div class="media-control metallic linear">
-          <a class="pause" onclick="autoplayOFF()"><i class="fa fa-pause"></i></a>
-          <a class="play" onclick="autoplayON()"><i class="fa fa-play"></i></a>
-          <a class="prev-slide" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next-slide" onclick="plusSlides(1)">&#10095;</a>
         </div>
       </div>
     </div>
@@ -98,16 +98,5 @@
 
     <script src="include/mobile-header.js" defer> </script>
     <script src="include/slideshow.js" defer> </script>
-    <script type="text/javascript">
-      window.onload = function adaptSlidePos() {
-        if (window.innerWidth < 512) {
-          var slides = document.getElementsByClassName("slide");
-          for(var i = 0; i < slides.length; i++) {
-            var hc = slides[i].getElementsByClassName("slide-caption")[0].clientHeight;
-            slides[i].getElementsByClassName("slide-img")[0].style.bottom = hc+"px";
-          }
-        }
-      }
-    </script>
   </body>
 </html>
