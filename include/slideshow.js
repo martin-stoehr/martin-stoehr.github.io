@@ -72,18 +72,16 @@ autoplayON = () =>{
 
 // adapt size and placement of slide image for small device widths
 function adaptSlideImg() {
-  var ww = window.innerWidth
-  var whRatio = ww / window.innerHeight
-  if (whRatio < 6/10) {
-    var slides = document.getElementsByClassName("slide");
-    for(var i = 0; i < slides.length; i++) {
-      var hc = slides[i].getElementsByClassName("slide-caption")[0].clientHeight;
-      slides[i].getElementsByClassName("slide-img")[0].style.bottom = hc+"px";
-    }
-  } else {
-    var slides = document.getElementsByClassName("slide");
-    for(var i = 0; i < slides.length; i++) {
-        slides[i].getElementsByClassName("slide-img")[0].style.bottom = "0";
+  var hcan = document.getElementsByClassName("slideshow-canvas")[0].clientHeight;
+  var slides = document.getElementsByClassName("slide");
+  for(var i = 0; i < slides.length; i++) {
+    var hcap = slides[i].getElementsByClassName("slide-caption")[0].clientHeight;
+    var simg = slides[i].getElementsByClassName("slide-img")[0]
+    var himg = simg.clientHeight;
+    if (himg+hcap < 1.05*hcan) {
+      simg.style.bottom = hcap+"px";
+    } else {
+      simg.style.bottom = "0";
     }
   }
 }
