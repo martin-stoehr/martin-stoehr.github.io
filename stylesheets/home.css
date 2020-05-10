@@ -26,11 +26,11 @@
   }
 }
 
-/* mobile portrait long*/
-@media screen and (max-aspect-ratio:7/12) {
+/* mobile portrait slim */
+@media screen and (max-aspect-ratio:1/2) {
   .highlight-canvas {
     width: 96%;
-    height: 45vh;
+    height: 43vh;
   }
   .news-canvas {
     float: left;
@@ -40,8 +40,22 @@
   }
 }
 
-/* Tablets */
-@media screen and (min-aspect-ratio:7/12) and (max-aspect-ratio:9/10) {
+/* mobile portrait and eReader */
+@media screen and (min-aspect-ratio:1/2) and (max-aspect-ratio:13/20) {
+  .highlight-canvas {
+    width: 96%;
+    height: 50vh;
+  }
+  .news-canvas {
+    float: left;
+    width: 96%;
+    height: 40vh;
+    margin: 4vh 0;
+  }
+}
+
+/* Tablet */
+@media screen and (min-aspect-ratio:13/20) and (max-aspect-ratio:1/1) {
   .highlight-canvas {
     width: 96%;
     height: 60vh;
