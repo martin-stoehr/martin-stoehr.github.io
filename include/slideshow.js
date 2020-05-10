@@ -74,7 +74,7 @@ autoplayON = () =>{
 function adaptSlideImg() {
   var ww = window.innerWidth
   var whRatio = ww / window.innerHeight
-  if (whRatio < 6/9) {
+  if (whRatio < 6/10) {
     var slides = document.getElementsByClassName("slide");
     for(var i = 0; i < slides.length; i++) {
       var hc = slides[i].getElementsByClassName("slide-caption")[0].clientHeight;
