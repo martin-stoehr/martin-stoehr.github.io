@@ -7,6 +7,13 @@
   --base-shadow-color: rgba(0,0,0,0.3);
   --base-border-color: #000000;
 }
+
+@media screen and (max-width:680px) {
+  :root {
+    --base-font-size: calc(0.7em + 0.4vmin);
+  }
+}
+
 :root {
   --base-header-height: calc(2.34 * var(--base-font-size));
 }
@@ -117,6 +124,7 @@ header{
   .headnav {
     position: fixed;
     top: calc(var(--base-header-height) - 10px);
+    padding-top: 10px;
     left: 0;
     display: none;
   }

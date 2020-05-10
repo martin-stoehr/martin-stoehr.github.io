@@ -26,6 +26,13 @@
   }
 }
 
+@media screen and (max-aspect-ratio:1/2) {
+  .highlight-canvas {
+    width: 96%;
+    height: 50vh;
+  }
+}
+
 @media screen and (max-height:480px) {
   .highlight-canvas {
     height: 100vh;

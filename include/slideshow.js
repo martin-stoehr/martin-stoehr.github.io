@@ -72,7 +72,9 @@ autoplayON = () =>{
 
 // adapt size and placement of slide image for small device widths
 function adaptSlideImg() {
-  if (window.innerWidth < 580) {
+  var ww = window.innerWidth
+  var whRatio = ww / window.innerHeight
+  if (whRatio < 6/9) {
     var slides = document.getElementsByClassName("slide");
     for(var i = 0; i < slides.length; i++) {
       var hc = slides[i].getElementsByClassName("slide-caption")[0].clientHeight;
