@@ -69,6 +69,13 @@
   }
 }
 
+/* mobile landscape */
+@media screen and (max-height:420px) {
+  .news-canvas {
+    height: 70vh;
+  }
+}
+
 .newsticker {
   position: relative;
   background: #f4f4f4;

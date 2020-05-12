@@ -4,6 +4,7 @@
   --base-font-size: calc(0.8em + 0.4vmin);
   --base-link-color: #0000ff;
   --base-header-bg: #1696a0;
+  --base-header-height: 6.5vh;
   --base-shadow-color: rgba(0,0,0,0.3);
   --base-border-color: #000000;
 }
@@ -12,10 +13,6 @@
   :root {
     --base-font-size: calc(0.6em + 0.4vmin);
   }
-}
-
-:root {
-  --base-header-height: calc(2.34 * var(--base-font-size));
 }
 
 @font-face {
@@ -100,20 +97,22 @@ header{
 .headnav {
   float: left;
   color: black;
-  font-size: calc(1.2 * var(--base-font-size));
-  line-height: 1.8;
 }
 
 .headnav .naventry {
   float: left;
   background: var(--base-header-bg);
+  font-size: calc(1.2 * var(--base-font-size));
+  line-height: calc(0.94 * var(--base-header-height));
+  padding-bottom: calc(0.06 * var(--base-header-height));
 }
 
 .headnav a {
   position: relative;
   color: black;
-  text-decoration:none;
-  padding: 10px 12px;
+  text-decoration: none;
+  padding: 0 0.7vw;
+  padding-bottom: calc(0.14 * var(--base-header-height));
 }
 
 @media screen and (max-width:680px) {
@@ -123,8 +122,8 @@ header{
 
   .headnav {
     position: fixed;
-    top: calc(var(--base-header-height) - 10px);
-    padding-top: 10px;
+    top: var(--base-header-height);
+    padding-top: 0;
     left: 0;
     display: none;
   }
@@ -136,9 +135,17 @@ header{
   .headnav a:hover {
     color: white;
   }
+}
 
-  .naventry, .naventry a, .current {
-    line-height: 1.6;
+@media screen and (max-width:540px) {
+  .naventry a{
+    font-size: calc(2 * var(--base-font-size));
+  }
+}
+
+@media screen and (max-width:680px) and (max-height:420px) {
+  .naventry a {
+    line-height: 2;
   }
 }
 
