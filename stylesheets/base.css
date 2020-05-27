@@ -3,7 +3,7 @@
   --base-font-color: #000000;
   --base-font-size: calc(0.8em + 0.4vmin);
   --base-link-color: #0000ff;
-  --base-header-bg: #1696a0;
+  --base-header-bg: #0a2d6b;
   --base-header-height: 6.5vh;
   --base-shadow-color: rgba(0,0,0,0.3);
   --base-border-color: #000000;
@@ -12,6 +12,12 @@
 @media screen and (max-width:540px) {
   :root {
     --base-font-size: calc(0.6em + 0.4vmin);
+  }
+}
+
+@media screen and (max-height:490px) {
+  :root {
+    --base-header-height: 32px;
   }
 }
 
@@ -69,6 +75,7 @@ img {
   width: 100%;
   height: 100%;
   background:transparent;
+  z-index: 999999;
 }
 
 a.anchor {
@@ -80,6 +87,7 @@ a.anchor {
 
 header{
   background: var(--base-header-bg);
+  box-shadow: -50vw 0 50vw -45vw #000000 inset, 50vw 0 50vw -45vw #000000 inset;
   font-weight: 400;
   font-size: calc(1.2 * var(--base-font-size));
   line-height: var(--base-header-height);
@@ -91,17 +99,18 @@ header{
   left: 0;
   padding: 0 1vw;
   overflow-y: hidden;
-  z-index: 9999;
+  z-index: 99999;
+  text-align: center;
 }
 
 .headnav {
   float: left;
-  color: black;
+  color: #f0f0f0;
 }
 
 .headnav .naventry {
   float: left;
-  background: var(--base-header-bg);
+  background: rgba(0,0,0,0);
   font-size: calc(1.2 * var(--base-font-size));
   line-height: calc(0.94 * var(--base-header-height));
   padding-bottom: calc(0.06 * var(--base-header-height));
@@ -109,7 +118,7 @@ header{
 
 .headnav a {
   position: relative;
-  color: black;
+  color: #f0f0f0;
   text-decoration: none;
   padding: 0 0.7vw;
   padding-bottom: calc(0.14 * var(--base-header-height));
@@ -130,10 +139,12 @@ header{
 
   .headnav, .naventry {
     width: 170px;
+    background: var(--base-header-bg);
+    box-shadow: 44vw 0 50vw -45vw #000000 inset;
   }
 
   .headnav a:hover {
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -161,7 +172,7 @@ header{
     margin: 0 auto;
     border-left: 2.5vmin solid transparent;
     border-right: 2.5vmin solid transparent;
-    border-bottom: 3vmin solid black;
+    border-bottom: 3vmin solid #ffffff;
   }
 
   .headnav .current::after {
@@ -175,12 +186,12 @@ header{
     margin: 0 auto;
     border-left: 2.5vmin solid transparent;
     border-right: 2.5vmin solid transparent;
-    border-bottom: 3vmin solid white;
+    border-bottom: 3vmin solid #ffffff;
   }
 }
 
 .headnav .current, .headnav .current a {
-  color: white;
+  color: #ffffff;
 }
 
 .navbtn {
@@ -195,32 +206,45 @@ header{
 
 .bar1, .bar2, .bar3 {
   width: calc(0.5 * var(--base-header-height));
-  height: calc(0.15 * var(--base-header-height));
-  background-color: black;
-  margin: calc(0.05 * var(--base-header-height)) 0;
+  height: calc(0.125 * var(--base-header-height));
+  background-color: white;
+  margin: calc(0.04 * var(--base-header-height)) 0;
   transition: 0.4s;
   border-radius: 10%;
 }
 .bar1 {
-  margin-top: calc(0.225 * var(--base-header-height));
+  margin-top: calc(0.25 * var(--base-header-height));
 }
 .bar3 {
   margin-bottom: calc(0.225 * var(--base-header-height));
 }
 
 .change .bar1 {
-  -webkit-transform: translate(0, calc(0.2 * var(--base-header-height)));
-  transform: translate(0, calc(0.2 * var(--base-header-height)));
+  -webkit-transform: translate(0, calc(0.21 * var(--base-header-height)));
+  transform: translate(0, calc(0.21 * var(--base-header-height)));
 }
 .change .bar3 {
-  -webkit-transform: translate(0, calc(-0.2 * var(--base-header-height)));
-  transform: translate(0, calc(-0.2 * var(--base-header-height)));
+  -webkit-transform: translate(0, calc(-0.21 * var(--base-header-height)));
+  transform: translate(0, calc(-0.21 * var(--base-header-height)));
 }
 
 @media screen and (min-width:680px) {
   .navbtn {
     display: none;
   }
+}
+
+.header-logo-container {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  float: right;
+  padding-right: 0.5vw;
+}
+
+.header-logo {
+  max-height: 76%;
+  margin: 6% auto 18% auto;
 }
 
 .sticker {
