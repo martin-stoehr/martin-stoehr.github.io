@@ -1,4 +1,4 @@
-function myFunction(x) {
+function DropDownNavbar(x) {
   x.classList.toggle("change");
   var headernav = document.getElementById("head-nav");
 
