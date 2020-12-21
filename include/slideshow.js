@@ -55,8 +55,8 @@ autoplayOFF = () => {
   var pauseButton = document.getElementsByClassName("pause");
   clearInterval(slideTimer);
   autoplay = 0;
-  pauseButton[0].style.display = "none";
-  playButton[0].style.display = "block";
+  pauseButton[0].style.visibility = "hidden";
+  playButton[0].style.visibility = "visible";
 }
 
 // resume autoplay
@@ -66,8 +66,8 @@ autoplayON = () =>{
   clearInterval(slideTimer);
   autoplay = 1;
   slideTimer = setInterval(function(){plusSlides(slideIndex)}, 5000);
-  playButton[0].style.display = "none";
-  pauseButton[0].style.display = "block";
+  playButton[0].style.visibility = "hidden";
+  pauseButton[0].style.visibility = "visible";
 }
 
 // adapt size and placement of slide image for small device widths

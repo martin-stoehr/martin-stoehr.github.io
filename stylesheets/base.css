@@ -61,6 +61,11 @@ a {
   color: var(--base-link-color);
 }
 
+a.external::before {
+  content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+  margin: 0 4px 0 2px;
+}
+
 img {
   vertical-align: middle;
   max-height: 100%;
@@ -242,7 +247,6 @@ header{
 }
 
 .header-logo-container {
-  display: inline-block;
   height: 100%;
   vertical-align: middle;
   float: right;
