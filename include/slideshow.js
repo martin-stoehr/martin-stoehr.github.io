@@ -40,14 +40,18 @@ function currentSlide(n){
 function showSlides(n){
   var i;
   var allSlides = document.getElementsByClassName("slide");
+  var dots = document.getElementsByClassName("dot");
   if (n > allSlides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = allSlides.length}
   for (i = 0; i < allSlides.length; i++) {
     allSlides[i].style.display = "none";
+    dots[i].className = dots[i].className.replace(" active", "");
   }
   allSlides[slideIndex-1].style.display = "block";
   adaptSlideImg()
+  dots[slideIndex-1].className += " active";
 }
+
 
 // pause autoplay
 autoplayOFF = () => {
