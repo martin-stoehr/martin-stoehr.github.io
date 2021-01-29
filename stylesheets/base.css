@@ -22,21 +22,28 @@
 }
 
 @font-face {
-  font-family: 'default-font';
-    src:  url('include/fontawesome-webfont.woff2') format('woff2'),
-            url('include/fontawesome-webfont.woff') format('woff'),
-            url('include/fontawesome-webfont.ttf') format('truetype');
+  font-family: 'awesome';
+    src:  url('../include/fontawesome-webfont.woff2') format('woff2'),
+            url('../include/fontawesome-webfont.woff') format('woff'),
+            url('../include/fontawesome-webfont.ttf') format('truetype');
+  }
+
+@font-face {
+  font-family: 'alegreya';
+    src:  url('../include/AlegreyaSans-Regular.woff2') format('woff2'),
+            url('../include/AlegreyaSans-Regular.woff') format('woff'),
+            url('../include/AlegreyaSans-Regular.ttf') format('truetype');
   }
 
 @font-face {
   font-family: 'handwritten';
-  src:  url('include/reenie-beanie.woff2') format('woff2');
+  src:  url('../include/reenie-beanie.woff2') format('woff2');
 }
 
 body {
   color: var(--base-font-color);
   background: var(--base-bg-color);
-  font-family: 'default-font', 'Roboto', helvetica, arial, sans-serif;
+  font-family: 'awesome', 'Roboto', helvetica, arial, sans-serif;
   font-size: calc(1.5 * var(--base-font-size));
   line-height: 1.15;
   overflow-x: hidden;
