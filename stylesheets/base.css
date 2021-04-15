@@ -1,7 +1,7 @@
 :root {
   --base-bg-color: #ffffff;
   --base-font-color: #000000;
-  --base-font-size: calc(0.8em + 0.4vmin);
+  --base-font-size: calc(0.8em + 0.35vmin);
   --base-link-color: #0000ff;
   --base-header-bg: #0a2d6b;
   --base-header-height: 6.5vh;
@@ -22,28 +22,51 @@
 }
 
 @font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  src: local(''),
+        url('./fonts/roboto-condensed-v19-latin-regular.woff2') format('woff2'),
+        url('./fonts/roboto-condensed-v19-latin-regular.woff') format('woff'),
+        url('./fonts/roboto-condensed-v19-latin-regular.otf') format('otf'),
+        url('./fonts/roboto-condensed-v19-latin-regular.ttf') format('truetype'),
+        url('./fonts/roboto-condensed-v19-latin-regular.eot'),
+        url('./fonts/roboto-condensed-v19-latin-regular.eot?#iefix') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: 'plexcond';
+  src: local(''),
+        url('./fonts/ibm-plex-sans-condensed-v7-latin-regular.woff2') format('woff2'),
+        url('./fonts/ibm-plex-sans-condensed-v7-latin-regular.woff') format('woff'),
+        url('./fonts/ibm-plex-sans-condensed-v7-latin-regular.ttf') format('truetype');
+  }
+
+@font-face {
   font-family: 'awesome';
-    src:  url('../include/fontawesome-webfont.woff2') format('woff2'),
-            url('../include/fontawesome-webfont.woff') format('woff'),
-            url('../include/fontawesome-webfont.ttf') format('truetype');
+  src: local(''),
+        url('./fonts/fontawesome-webfont.woff2') format('woff2'),
+        url('./fonts/fontawesome-webfont.woff') format('woff'),
+        url('./fonts/fontawesome-webfont.ttf') format('truetype');
   }
 
 @font-face {
   font-family: 'alegreya';
-    src:  url('../include/AlegreyaSans-Regular.woff2') format('woff2'),
-            url('../include/AlegreyaSans-Regular.woff') format('woff'),
-            url('../include/AlegreyaSans-Regular.ttf') format('truetype');
+  src: local(''),
+        url('./fonts/AlegreyaSans-Regular.woff2') format('woff2'),
+        url('./fonts/AlegreyaSans-Regular.woff') format('woff'),
+        url('./fonts/AlegreyaSans-Regular.ttf') format('truetype');
   }
 
 @font-face {
   font-family: 'handwritten';
-  src:  url('../include/reenie-beanie.woff2') format('woff2');
+  src: local(''),
+        url('../include/reenie-beanie.woff2') format('woff2');
 }
 
 body {
   color: var(--base-font-color);
   background: var(--base-bg-color);
-  font-family: 'awesome', 'Roboto', helvetica, arial, sans-serif;
+  font-family: 'awesome', 'roboto', helvetica, arial, sans-serif;
   font-size: calc(1.5 * var(--base-font-size));
   line-height: 1.15;
   overflow-x: hidden;
@@ -111,7 +134,7 @@ header{
   left: 0;
   padding: 0 1vw;
   overflow-y: hidden;
-  z-index: 99999;
+  z-index: 9999999;
   text-align: center;
 }
 
@@ -310,21 +333,21 @@ header{
 }
 
 h1 {
-  font-size: calc(1.8 * var(--base-font-size));
+  font-size: calc(1.5 * var(--base-font-size));
   line-height: 2.15;
   margin: 0;
   font-weight: 600;
 }
 
 h2 {
-  font-size: calc(1.7 * var(--base-font-size));
+  font-size: calc(1.4 * var(--base-font-size));
   line-height: 2;
   margin: 0;
   font-weight: 550;
 }
 
 h3 {
-  font-size: calc(1.6 * var(--base-font-size));
+  font-size: calc(1.3 * var(--base-font-size));
   line-height: 2.1;
   margin: 0;
   font-weight: 550;
