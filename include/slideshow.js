@@ -6,7 +6,7 @@ var autoplay = 1;
 // autoplay
 window.addEventListener("load",function() {
   showSlides(slideIndex);
-  slideTimer = setInterval(function(){plusSlides(1)}, 5000);
+  slideTimer = setInterval(function(){plusSlides(1)}, 6000);
   slideshowContainer = document.getElementsByClassName('slideshow-canvas')[0];
 })
 
@@ -20,9 +20,9 @@ function plusSlides(n){
   }
   if (autoplay === 1){
     if (n === -1){
-      slideTimer = setInterval(function(){plusSlides(n + 2)}, 5000);
+      slideTimer = setInterval(function(){plusSlides(n + 2)}, 6000);
     } else {
-      slideTimer = setInterval(function(){plusSlides(n + 1)}, 5000);
+      slideTimer = setInterval(function(){plusSlides(n + 1)}, 6000);
     }
   }
 }
@@ -31,7 +31,7 @@ function plusSlides(n){
 function currentSlide(n){
   if (autoplay === 1) {
     clearInterval(slideTimer);
-    slideTimer = setInterval(function(){plusSlides(n + 1)}, 5000);
+    slideTimer = setInterval(function(){plusSlides(n + 1)}, 6000);
   }
   showSlides(slideIndex = n);
 }
