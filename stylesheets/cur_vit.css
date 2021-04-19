@@ -1,0 +1,28 @@
+.cv-block {
+    width: 100%;
+    margin: -1%;
+    padding: 1%;
+    overflow-y: hidden;
+}
+
+.cv-entry {
+    display: table;
+    margin-top: 0;
+    line-height: 1.25;
+}
+
+.cv-year {
+    padding-bottom: 2%;
+    font-weight: bold;
+}
+.cv-year:after {
+    content: "\20\2004";
+}
+
+.cv-text {
+    padding-bottom: 2%;
+}
+
+.last-row {
+    padding-bottom: 0;
+}

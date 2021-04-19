@@ -1,0 +1,21 @@
+.sticker a:hover{
+  text-decoration: underline;
+  text-decoration-thickness: 5%;
+}
+
+.code-block {
+    width: 100%;
+    margin: -1%;
+    padding: 1% 1% 0 1%;
+    overflow-y: hidden;
+}
+
+.code-entry {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 2%;
+}
+
+.last-entry {
+    padding-bottom: 0;
+}

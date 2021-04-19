@@ -22,6 +22,11 @@
   padding-bottom: 1vh;
 }
 
+.abstract-container a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 5%;
+}
+
 .abstract-container .abs {
   font-family: 'plexcond', 'awesome', 'roboto';
   padding: 0;
