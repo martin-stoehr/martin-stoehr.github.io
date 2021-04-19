@@ -43,11 +43,16 @@
   left: 0;
   width: auto;
   height: 2px;
-  background: radial-gradient(#1a1a1a, transparent);
+  background: radial-gradient(#1a1a1a 0, transparent 100%);
 }
 
 .newsentry a{
   font-style: italic;
+}
+
+.newsentry a:hover{
+  text-decoration: underline;
+  text-decoration-thickness: 5%;
 }
 
 .newsdate {
@@ -196,10 +201,72 @@
   -webkit-transition-duration: 1s;
 	   -moz-transition-duration: 1s;
 	     -o-transition-duration: 1s;
-	        transition-duration: 1s; }
+	        transition-duration: 1s;
+}
 
 
+.latest-papers-canvas {
+  padding: 3vh 1vw;
+  float: left;
+  margin: 0;
+  width: 100%;
+}
 
+.latest-papers-canvas a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 10%;
+}
+
+.recent-paper {
+  width: 27%;
+  float: left;
+  margin: 0;
+  padding: 0.5% 3%;
+}
+
+.recent-paper.middle {
+  position: relative;
+}
+.recent-paper.middle:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: radial-gradient(#1a1a1a 0, transparent 100%);
+}
+.recent-paper.middle:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: radial-gradient(#1a1a1a 0, transparent 100%);
+}
+
+.rec-paper-img {
+  margin: auto;
+  max-width: 90%;
+  height: 42vh;
+}
+
+.rec-paper-title {
+  font-weight: bold;
+  margin: 0;
+  padding: 4% 0 1% 0;
+}
+
+.rec-paper-journal {
+  margin: 0;
+  padding: 1% 0;
+}
+
+.rec-paper-authors {
+  margin: 0;
+  padding: 1% 0 0 0;
+}
 
 .mugshot-canvas {
   left: 0;
@@ -275,6 +342,36 @@
     height: 20%;
   }
 
+  .recent-paper {
+    width:92%;
+    padding: 3% 1%;
+    margin: 0 auto;
+  }
+  .recent-paper.middle:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    width: auto;
+    height: 2px;
+    background: radial-gradient(#1a1a1a 0, transparent 100%);
+  }
+  .recent-paper.middle:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: auto;
+    height: 2px;
+    background: radial-gradient(#1a1a1a 0, transparent 100%);
+  }
+  .rec-paper-img {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
   .mugshot-canvas {
     width: 96%;
     text-align: center;
@@ -312,6 +409,36 @@
     font-size: 2vh;
   }
 
+  .recent-paper {
+    width:92%;
+    padding: 3% 1%;
+    margin: 0 auto;
+  }
+  .recent-paper.middle:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    width: auto;
+    height: 2px;
+    background: radial-gradient(#1a1a1a 0, transparent 100%);
+  }
+  .recent-paper.middle:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: auto;
+    height: 2px;
+    background: radial-gradient(#1a1a1a 0, transparent 100%);
+  }
+  .rec-paper-img {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
   .mugshot-canvas {
     width: 96%;
     text-align: center;
@@ -344,6 +471,36 @@
     width: 96%;
     height: 40vh;
     margin: 4vh 0;
+  }
+
+  .recent-paper {
+    width:92%;
+    padding: 3% 1%;
+    margin: 0 auto;
+  }
+  .recent-paper.middle:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    width: auto;
+    height: 2px;
+    background: radial-gradient(#1a1a1a 0, transparent 100%);
+  }
+  .recent-paper.middle:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: auto;
+    height: 2px;
+    background: radial-gradient(#1a1a1a 0, transparent 100%);
+  }
+  .rec-paper-img {
+    max-width: 50%;
+    margin: 0 auto;
   }
 
   .mugshot-canvas {
@@ -381,6 +538,36 @@
     margin: 4vh 0;
   }
 
+  .recent-paper {
+    width:92%;
+    padding: 3% 1%;
+    margin: 0 auto;
+  }
+  .recent-paper.middle:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    width: auto;
+    height: 2px;
+    background: radial-gradient(#1a1a1a 0, transparent 100%);
+  }
+  .recent-paper.middle:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: auto;
+    height: 2px;
+    background: radial-gradient(#1a1a1a 0, transparent 100%);
+  }
+  .rec-paper-img {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
   .mugshot-canvas {
     width: 96%;
     text-align: center;
@@ -416,6 +603,36 @@
   }
   .slide-caption {
     height: 24%;
+  }
+
+  .recent-paper {
+    width:92%;
+    padding: 3% 1%;
+    margin: 0 auto;
+  }
+  .recent-paper.middle:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    width: auto;
+    height: 2px;
+    background: radial-gradient(#1a1a1a 0, transparent 100%);
+  }
+  .recent-paper.middle:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: auto;
+    height: 2px;
+    background: radial-gradient(#1a1a1a 0, transparent 100%);
+  }
+  .rec-paper-img {
+    max-width: 50%;
+    margin: 0 auto;
   }
 
   .mugshot-canvas {
