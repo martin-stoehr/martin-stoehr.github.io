@@ -94,10 +94,29 @@
   text-align: center;
 }
 
+.landing {
+  position: absolute;
+  width: 94%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 12;
+  top: 0;
+  left: 3%;
+  float: left;
+  display: flex;
+  text-align: center;
+}
+
+.landing img {
+  max-width: 100%;
+  max-height: 90%;
+  margin: 0 auto auto auto;
+}
+
 .slideshow-canvas .slide-img {
   max-width: 100%;
   max-height: 90%;
-  margin: auto;
+  margin: 0 auto auto auto;
 }
 
 .dot {

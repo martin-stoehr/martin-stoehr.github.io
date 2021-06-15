@@ -41,6 +41,7 @@ function showSlides(n){
   var i;
   var allSlides = document.getElementsByClassName("slide");
   var dots = document.getElementsByClassName("dot");
+  var landing = document.getElementsByClassName("landing");
   if (n > allSlides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = allSlides.length}
   for (i = 0; i < allSlides.length; i++) {
@@ -50,6 +51,7 @@ function showSlides(n){
   allSlides[slideIndex-1].style.display = "block";
   adaptSlideImg()
   dots[slideIndex-1].className += " active";
+  landing[0].style.display = "none";
 }
 
 
