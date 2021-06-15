@@ -1,14 +1,18 @@
-var slideIndex = 1;
+var slideIndex = 2;
 var slideTimer;
 var slideshowContainer;
 var autoplay = 1;
 
 // autoplay
 window.addEventListener("load",function() {
+  setTimeout(function(){ runtheshow(); }, 7000);
+})
+
+function runtheshow(){
   showSlides(slideIndex);
   slideTimer = setInterval(function(){plusSlides(1)}, 6000);
   slideshowContainer = document.getElementsByClassName('slideshow-canvas')[0];
-})
+}
 
 // next and previous
 function plusSlides(n){
