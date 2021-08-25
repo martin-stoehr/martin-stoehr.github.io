@@ -35,6 +35,11 @@
   font-size: calc(1.1 * var(--base-font-size));
 }
 
+.abstract-container .abs sub {
+  font-size: calc(0.8 * var(--base-font-size));
+  line-height: 0;
+}
+
 @media screen and (max-width:960px) {
   .toc-img-container, .abstract-container {
     float: left;

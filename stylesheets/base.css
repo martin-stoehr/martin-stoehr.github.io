@@ -380,3 +380,22 @@ h3 {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+
+/* superscript and subscript */
+.supsub {
+  display: inline-block;
+  line-height: 0;
+}
+
+.supsub sup,
+.supsub sub {
+  position: relative;
+  display: block;
+  font-size: calc(0.8 * var(--base-font-size));
+  top: calc(0.4 * var(--base-font-size));
+}
+
+.supsub sup {
+  top: calc(-0.6 * var(--base-font-size));
+}
