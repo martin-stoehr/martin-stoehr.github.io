@@ -91,6 +91,7 @@ a {
   color: var(--base-link-color);
 }
 
+
 a.external::before {
   content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
   margin: 0 4px 0 2px;
@@ -398,4 +399,27 @@ h3 {
 
 .supsub sup {
   top: calc(-0.6 * var(--base-font-size));
+}
+
+.myfooter {
+  float: left;
+  width: 100vw;
+  bottom: 0;
+  padding: 0;
+  margin: 2vh 0 0 -2vw;
+  background: #0a2d6b;
+  text-align: center;
+  box-shadow: -50vw 0 50vw -45vw #000000 inset, 50vw 0 50vw -45vw #000000 inset;
+}
+
+.copystatement {
+  width: 100%;
+  line-height: 1;
+  overflow-y: visible;
+  padding: 1% 0 0.75% 1%;
+  margin: 0;
+  text-align: left;
+  left: 0;
+  font-size: calc(1 * var(--base-font-size));
+  color:white;
 }
