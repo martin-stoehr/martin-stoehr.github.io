@@ -6,12 +6,18 @@
     <title>Home | Martin Stöhr Scholarly Profile</title>
     <meta name="description" content="Scholarly Profile and Research of Martin Stöhr">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="SHORTCUT ICON" href="img/MS-logo.ico"/>
+    <link rel='apple-touch-icon' type='image/png' href='img/MS-logo.png'>
+    <link rel="icon" type="image/png" href="img/MS-logo.png">
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <!-- preloads -->
     <link rel="preload" href="img/HP35_artwork.png" as="image">
     <link rel="preload" href="img/overview-illustration.png" as="image">
     <link rel="preload" href="img/DFTB-NN_overview.png" as="image">
+    <link rel="preload" href="img/DCS_overview.png" as="image">
     <link rel="preload" type="text/javascript" href="include/slideshow.js" as="script">
     <link rel="preload" type="text/javascript" href="include/mobile-header.js" as="script">
     <!-- CSS Base -->
@@ -48,39 +54,34 @@
           <a class="prev-slide" onclick="plusSlides(-1)">&#10094;</a>
           <div class="landing">
             <img src="img/overview-illustration.png"/>
-            <div class="slide-caption">
-              <span class="title">From QHOs to Proteins</span><br/>
-              Method developments and atomistic modeling across length scales
+            <div class="slide-title">
+              From Oscillators to Proteins<span class="slide-info">Method developments and atomistic modeling across length scales</span>
             </div>
           </div>
           <div id="theslides" class="slideshow-canvas">
             <div class="slide fade">
+              <div class="slide-title">
+                From Ocillators to Proteins<span class="slide-info">Method developments and atomistic modeling across length scales</span>
+              </div>
               <img class="slide-img" src="img/overview-illustration.png"/>
-              <div class="slide-caption">
-                <span class="title">From QHOs to Proteins</span><br/>
-                Method developments and atomistic modeling across length scales
-              </div>
             </div>
             <div class="slide fade">
+              <div class="slide-title">
+                The Quantum Nature of Proteins<span class="slide-info">Collectivity of van der Waals interactions persist to the length scales of biomolecular systems (see <a href="papers.html#SciAdv19">Publications</a>)</span>
+              </div>
               <img class="slide-img" src="img/HP35_artwork.png"/>
-              <div class="slide-caption">
-                <span class="title">The Quantum Nature of Proteins</span><br/>
-                  Collectivity of van der Waals interactions persist to the length scales of biomolecular systems (see Publications)
-              </div>
             </div>
             <div class="slide fade">
+              <div class="slide-title">
+                Hybrid QM/ML: DFTB-NN<sub style="line-height:0">rep</sub><span class="slide-info">Combining DFTB with many-body repulsive potentials from Deep Tensor Neural Networks (see <a href="papers.html#JPCL20">Publications</a>)</span>
+              </div>
               <img class="slide-img" src="img/DFTB-NN_overview.png"/>
-              <div class="slide-caption">
-                <span class="title">Hybrid QM/ML: DFTB-NN<sub style="line-height:0">rep</sub></span><br/>
-                  Combining DFTB with many-body repulsive potentials from Deep Tensor Neural Networks (see Publications)
-              </div>
             </div>
             <div class="slide fade">
-              <img class="slide-img" src="img/DCS_overview.png"/>
-              <div class="slide-caption">
-                <span class="title">Dipole-Correlated Coulomb Singles (DCS)</span><br/>
-                The unexpected role of so-far neglected dispersion&ndash;polarization-like interactions (see Publications)
+              <div class="slide-title">
+                Dipole-Correlated Coulomb Singles (DCS)<span class="slide-info">The unexpected role of so-far neglected dispersion&ndash;polarization-like interactions (see <a href="papers.html#NatComm2021">Publications</a>)</span>
               </div>
+              <img class="slide-img" src="img/DCS_overview.png"/>
             </div>
             <a class="pause" onclick="autoplayOFF()"><i class="fa fa-pause"></i></a>
             <a class="play" onclick="autoplayON()"><i class="fa fa-play"></i></a>
@@ -199,12 +200,12 @@
         <div class="sticker info-box">
           <div class="mugshot-canvas"><img src="img/MS-bw.png" class="sketch-border mugshot"></div>
           <p class="greeting">Hi,</p>
-          <p>my name is Martin and I'm a postdoc in the Theoretical Chemical Physics group at the University of Luxembourg. Before joining the TCP group in Luxembourg, I studied chemistry at the Technical University Munich. After a few years in the lab, however, I realized if I'm cooking something for hours, I'd rather get something tasty and edible out of it. So, I moved research-wise into theory <span style="color:rgb(92,92,92)">(for more info, check out <a style="color:rgb(92,92,92)" title="Go to CV" href="cur_vit.html"><i>my CV</i></a>&hairsp;&hairsp;&hairsp;)</span>.
+          <p>my name is Martin and I'm a postdoctoral researcher in Theoretical Chemistry / Chemical Physics. I'm a chemist by education, but after a few years in the lab, I realized if I spend hours cooking something, I'd rather get something tasty and edible in the end. So, I moved research-wise into theory <span style="color:rgb(92,92,92)">(for more info, check out <a style="color:rgb(92,92,92)" title="Go to CV" href="cur_vit.html"><i>my CV</i></a>&hairsp;&hairsp;&hairsp;)</span>.
           </p>
           <p>My research interests focus around understanding the quantum-mechanical basis of (non-local) interaction mechanisms and emergent phenomena in complex systems ranging from nano-scale compounds to biomolecular systems. Further, I'm continously working on developing and improving efficient electronic structure methods for large-scale atomistic modeling. Since recently, this involves on-going efforts to incorporate quantum-mechanical principles into machine learning techniques <span style="color:rgb(92,92,92)">(you can find my publications under <a style="color:rgb(92,92,92)" title="Go to Publications" href="papers.html"><i>Publications</i>&hairsp;&hairsp;</a> or the Google scholar link below)</span>.
           </p>
           <p>
-            Besides research, I enjoy playing football, ice hockey, volleyball, almost any kind of alpine sports, but also traveling, (web) design, music, cooking, and retro-games.
+            Besides research, I enjoy playing football, ice hockey, volleyball, almost any kind of alpine sports, but also traveling, (web) design, music, cooking, quizzes, and retro-games.
           </p>
           <p>
             <b>Contact:</b> martin.stoehr [at] uni.lu<div class="protect-img"></div>
@@ -221,7 +222,7 @@
         </p>
         <img src="img/logo-bottom.png" style="max-height:28vh"/>
         <p class="copystatement">
-          <span style="font-family:'Roboto'">&copy;</span> 2022 | Martin Stöhr. All rights reserved.
+          <span style="font-family:'Roboto'">&copy;</span> 2022 | Martin Stöhr
         </p>
       </div>
     </main>
