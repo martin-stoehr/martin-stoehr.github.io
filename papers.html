@@ -39,6 +39,138 @@
       </header>
 
       <div class="sticker row first">
+        <a class="anchor" id="PCCP26"></a>
+        <div class="toc-img-container">
+          <img class="toc-image" src="img/blank.png"
+            alt="Coming soon!">
+          <div class="protect-img"></div>
+        </div>
+        <div class="abstract-container imgleft">
+          <p class="papertitle">
+            Advancing Density Functional Tight-Binding Method for Large Organic Molecules through Equivariant Neural Networks
+          </p>
+          <p class="paperinfo">
+            L. Medrano Sandonas, M. Puleva, R. Parra Payano, M. St&ouml;hr, G. Cuniberti and A. Tkatchenko: <i>Physical Chemistry Chemical Physics</i> accepted for publication (2026)<br/>
+            <a href="https://doi.org/10.1039/D6CP00038J" class="external" target="_blank" rel="noopener noreferrer">
+              doi.org/10.1039/D6CP00038J
+            </a>
+          </p>
+          <p class="abs">
+            Semi-empirical quantum-mechanical (QM) methods have become valuable tools for studying complex (bio)molecular systems due to their balance between computational efficiency and accuracy. A key aspect of these methods is their parameterization, which not only governs the reliability of the results but also provides an opportunity to enhance their overall performance. In our previous work [<i>J. Phys. Chem. Lett.</i>, 2021, <b>11</b>, 16], we advanced the third-order semi-empirical density functional tight-binding (DFTB3) method for computing multiple properties of small molecules by developing the machine learning (ML) potential NNrep to bridge the gap between DFTB3 electronic components and those of the hybrid DFT-PBE0 functional. To overcome the limitations of NNrep, we introduce the EquiDTB framework, which leverages physics-inspired equivariant neural networks (NN) to parameterize scalable and transferable many-body &Delta;TB potentials, replacing the standard pairwise DFTB repulsive potential. This advancement extends the applicability of our ML-corrected DFTB approach to larger molecules and non-covalent systems (including only C, N, O, and H atoms), going beyond the chemical space represented in the training QM datasets. The enhanced performance of EquiDTB over the standard TB methods is demonstrated by the accurate computation of the atomic forces of S66x8 molecular dimers, as well as their interaction energies. Moreover, EquiDTB can be effectively employed to explore the potential energy surfaces of large and flexible drug-like molecules &mdash; for example, to determine the minimum energy path between isomers, analyze structural transitions during dynamical simulations, compute vibrational modes, and investigate energetic rankings. The performance for single molecules slightly decreases when the DFTB electronic energy is reduced to first-order but remains superior to standard TB methods. Our work thus demonstrates that an optimal integration of an equivariant NN with QM datasets can advance the DFTB method while maintaining high efficiency, paving the way for reliable (bio)molecular simulations.
+          </p>
+        </div>
+      </div>
+      <div class="sticker row">
+        <a class="anchor" id="JCTC26_SQCFit1"></a>
+        <div class="toc-img-container">
+          <img class="toc-image" src="img/SQCFit1-toc.png"
+            alt="Coming soon!">
+          <div class="protect-img"></div>
+        </div>
+        <div class="abstract-container imgleft">
+          <p class="papertitle">
+            Semiempirical Quantum Chemistry in the Age of ab initio Data and Differentiable Programming: I. Differentiable Molecular Orbital Theory
+          </p>
+          <p class="paperinfo">
+            M. St&ouml;hr and T.&hairsp;J. Mart&iacute;nez: <i>Journal of Chemical Theory and Computation</i> <b>22</b>, 869&ndash;880 (2026)<br/>
+            <a href="https://doi.org/10.1021/acs.jctc.5c01482" class="external" target="_blank" rel="noopener noreferrer">
+              doi.org/10.1021/acs.jctc.5c01482
+            </a>
+          </p>
+          <p class="abs">
+            Semiempirical quantum chemistry (SQC) methods offer fast quantum chemical insights by constructing and solving a parametric effective minimal basis Fock matrix. Establishing suitable parametrizations has long been a challenging and time-consuming task involving tedious grid searches or costly finite-difference gradients of carefully crafted loss functions based on select experimental data. The growing availability of differentiable programming environments that leverage algorithmic differentiation to obtain complicated derivatives together with access to a wealth of reliable reference data from ab initio calculations offers a new and more efficient approach. In this work, we extend a previous, basic implementation of SQC methods in PyTorch [Zhou, G. <i>J. Chem. Theory Comput.</i> 2020, <b>16</b>, 4951&ndash;4962] by including global algorithmic considerations in the code design. This allows for improved general applicability and establishes a robust back-end for rapid SQC parametrizations. In particular, we address the general differentiability of the eigensolver and the iterative SCF procedure. The new implementation offers dramatic improvements in both computing cost and memory footprint, while simultaneously increasing numeric stability in gradient evaluation. We highlight the importance of these advances and their improvements over existing formulations and illustrate their role in the context of SQC parametrization.
+          </p>
+        </div>
+      </div>
+      <div class="sticker row">
+        <a class="anchor" id="JCTC25"></a>
+        <div class="toc-img-container">
+          <img class="toc-image" src="img/mlip_gi-toc.png"
+            alt="Coming soon!">
+          <div class="protect-img"></div>
+        </div>
+        <div class="abstract-container imgleft">
+          <p class="papertitle">
+            Locating Ab Initio Transition States via Approximate Geodesics on Machine Learned Potential Energy Surfaces
+          </p>
+          <p class="paperinfo">
+            D. Hait, J.&hairsp;D. Estrada Pabón, M. St&ouml;hr and T.&hairsp;J. Mart&iacute;nez: <i>Journal of Chemical Theory and Computation</i> <b>21</b>, 11632&ndash;11644 (2025)<br/>
+            <a href="https://doi.org/10.1021/acs.jctc.5c01221" class="external" target="_blank" rel="noopener noreferrer">
+              doi.org/10.1021/acs.jctc.5c01221
+            </a>
+          </p>
+          <p class="abs">
+            Efficient and reliable identification and optimization of transition state structures is a longstanding challenge in computational chemistry. Popular chain-of-states methods require hundreds if not thousands of ab initio calculations to generate initial guesses for local quasi-Newton optimizers, with persistent risk of collapse to an alternative stationary point on the potential energy surface (PES). Here, we show that high-quality guess structures for transition state optimization can be obtained by constructing the geodesic path between reactant and product structures on the PES generated by machine learning potentials (MLPs). We present an algorithm for optimization of such geodesic paths, as well as the associated codebase. We demonstrate effectiveness of this approach using the recent eSEN-sm-cons MLP. On average, the highest-energy point along these MLP geodesics requires 30% fewer quasi-Newton optimization steps to converge to the transition state compared to guesses from the fully ab initio freezing string method. Our approach therefore completely eliminates the need for ab initio calculations for the generation of transition state guesses and considerably speeds up subsequent structural optimization. Geodesic construction on ML PES thus promises to be a useful approach for efficient computational elucidation of complex chemical reaction networks.
+          </p>
+        </div>
+      </div>
+      <div class="sticker row">
+        <a class="anchor" id="JCP25"></a>
+        <div class="toc-img-container">
+          <img class="toc-image" src="img/QDOrev-toc.png"
+            alt="Coming soon!">
+          <div class="protect-img"></div>
+        </div>
+        <div class="abstract-container imgleft">
+          <p class="papertitle">
+            Accurate noncovalent interactions in atomistic systems via quantum Drude oscillators
+          </p>
+          <p class="paperinfo">
+            A. Khabibrakhmanov, D.&hairsp;V. Fedorov, A. Ambrosetti, J. Crain, K.&hairsp;L.&hairsp;C. Hunt, E.&hairsp;R. Johnson, K.&hairsp;D. Jordan, S. G&oacute;ger, M. Gori, M.&hairsp;R. Karimpour, R.&hairsp;J. Maurer, M. Sadhukhan, M. St&ouml;hr and A. Tkatchenko: <i>The Journal of Chemical Physics</i> <b>163</b>, 151001 (2025)<br/>
+            <a href="https://doi.org/10.1063/5.0281913" class="external" target="_blank" rel="noopener noreferrer">
+              doi.org/10.1063/5.0281913
+            </a>
+          </p>
+          <p class="abs">
+            Accurately modeling polarization and van der Waals (vdW) interactions in atomistic systems typically requires high-level quantum-mechanical methods that are computationally expensive, hence limited in applicability. To address this challenge, efficient yet physically grounded models are needed—ones that not only enable accurate predictions but also provide insight into how noncovalent interactions scale in complex molecular and material systems. This review highlights the quantum Drude oscillator (QDO) model, a physically motivated and computationally efficient framework that captures the essential features of electronic response, including polarization and dispersion forces, across a wide range of chemical and material systems. We discuss how the QDO model quantitatively reproduces the polarization response of many-electron atoms and how key components of noncovalent interactions &mdash; exchange-repulsion, polarization, and dispersion &mdash; emerge naturally in QDO dimers. Furthermore, the model provides predictive scaling laws that elucidate trends in polarizability and dispersion across the periodic table and in molecular assemblies. By uniting interpretability, accuracy, and efficiency, the QDO model offers a versatile approach for modeling noncovalent interactions in systems ranging from isolated molecules to complex condensed phases and nanostructured materials.
+          </p>
+        </div>
+      </div>
+      <div class="sticker row">
+        <a class="anchor" id="SciAdv24"></a>
+        <div class="toc-img-container">
+          <img class="toc-image" src="img/blank.png"
+            alt="Coming soon!">
+          <div class="protect-img"></div>
+        </div>
+        <div class="abstract-container imgleft">
+          <p class="papertitle">
+            Biomolecular dynamics with machine-learned quantum-mechanical force fields trained on diverse chemical fragments
+          </p>
+          <p class="paperinfo">
+            O. T. Unke, M. St&ouml;hr, S. Ganscha, T. Unterthiner, H. Maennel, S. Kashubin, D. Ahlin, M. Gastegger, L. Medrano Sandonas, J. T. Berryman, A. Tkatchenko and K.-R. M&uuml;ller: <i>Science Advances</i> <b>10</b>, eadn4397 (2024)<br/>
+            <a href="https://doi.org/10.1126/sciadv.adn4397" class="external" target="_blank" rel="noopener noreferrer">
+              doi.org/10.1126/sciadv.adn4397
+            </a>
+          </p>
+          <p class="abs">
+            Molecular dynamics (MD) simulations allow insights into complex processes, but accurate MD simulations require costly quantum-mechanical calculations. For larger systems, efficient but less reliable empirical force fields are used. Machine-learned force fields (MLFFs) offer similar accuracy as ab initio methods at orders-of-magnitude speedup, but struggle to model long-range interactions in large molecules. This work proposes a general approach to constructing accurate MLFFs for large-scale molecular simulations (GEMS) by training on <q>bottom-up</q> and <q>top-down</q> molecular fragments, from which the relevant interactions can be learned. GEMS allows nanosecond-scale MD simulations of >25,000 atoms at essentially ab initio quality, correctly predicts dynamical oscillations between different helical motifs in polyalanine, and yields good agreement with terahertz vibrational spectroscopy for large-scale protein-water fluctuations in solvated crambin. Our analyses indicate that simulations at ab initio accuracy might be necessary to understand dynamic biomolecular processes.
+          </p>
+        </div>
+      </div>
+      <div class="sticker row">
+        <a class="anchor" id="JCP23"></a>
+        <div class="toc-img-container">
+          <img class="toc-image" src="img/libMBD.png"
+            alt="Coming soon!">
+          <div class="protect-img"></div>
+        </div>
+        <div class="abstract-container imgleft">
+          <p class="papertitle">
+            libMBD: A general-purpose package for scalable quantum many-body dispersion calculations
+          </p>
+          <p class="paperinfo">
+            J. Hermann, M. St&ouml;hr, S. G&oacute;ger, S. Chaudhuri, B. Aradi, R. J. Maurer and A. Tkatchenko: <i>The Journal of Chemical Physics</i> <b>159</b>, 174802 (2023)<br/>
+            <a href="https://doi.org/10.1063/5.0170972" class="external" target="_blank" rel="noopener noreferrer">
+              doi.org/10.1063/5.0170972
+            </a>
+          </p>
+          <p class="abs">
+            Many-body dispersion (MBD) is a powerful framework to treat van der Waals (vdW) dispersion interactions in density-functional theory and related atomistic modeling methods. Several independent implementations of MBD with varying degree of functionality exist across a number of electronic structure codes, which both limits the current users of those codes and complicates dissemination of new variants of MBD. Here, we develop and document libMBD, a library implementation of MBD that is functionally complete, efficient, easy to integrate with any electronic structure code, and already integrated in FHI-aims, DFTB+, VASP, Q-Chem, CASTEP, and Quantum ESPRESSO. libMBD is written in modern Fortran with bindings to C and Python, uses MPI/ScaLAPACK for parallelization, and implements MBD for both finite and periodic systems, with analytical gradients with respect to all input parameters. The computational cost has asymptotic cubic scaling with system size, and evaluation of gradients only changes the prefactor of the scaling law, with libMBD exhibiting strong scaling up to 256 processor cores. Other MBD properties beyond energy and gradients can be calculated with libMBD, such as the charge-density polarization, first-order Coulomb correction, the dielectric function, or the order-by-order expansion of the energy in the dipole interaction. Calculations on supramolecular complexes with MBD-corrected electronic structure methods and a meta-review of previous applications of MBD demonstrate the broad applicability of the libMBD package to treat vdW interactions.
+          </p>
+        </div>
+      </div>
+      <div class="sticker row">
         <a class="anchor" id="PhysRevRes2021"></a>
         <div class="toc-img-container">
           <img class="toc-image" src="img/blank.png"
@@ -116,7 +248,7 @@
             DFTB+, a software package for efficient approximate density functional theory based atomistic simulations
           </p>
           <p class="paperinfo">
-            B. Hourahine, <i>et al.</i>: <i>The Journal of Chemical Physics</i> <b>152</b>, 124101 (2020)<br/>
+            B. Hourahine, B. Aradi, V. Blum, F. Bonaf&eacute;, A. Buccheri, C. Camacho, C. Cevallos, M.&hairsp;Y. Deshaye, T. Dumitrică, A. Dominguez, S. Ehlert, M. Elstner, T. van der Heide, J. Hermann, S. Irle, J.&hairsp;J. Kranz, C. K&ouml;hler, T. Kowalczyk, T. Kubař, I.&hairsp;S. Lee, V. Lutsker, R.&hairsp;J. Maurer, S.&hairsp;K. Min, I. Mitchell, C. Negre, T.&hairsp;A. Niehaus, A.&hairsp;M.&hairsp;N. Niklasson, A.&hairsp;J. Page, A. Pecchia, G. Penazzi, M.&hairsp;P. Persson, J. Řez&aacute;č, C.&hairsp;G. S&aacute;nchez, M. Sternberg, M. St&ouml;hr, F. Stuckenberg, A. Tkatchenko, V.&hairsp;W.-z. Yu, T. Frauenheim: <i>The Journal of Chemical Physics</i> <b>152</b>, 124101 (2020)<br/>
             <a href="https://doi.org/10.1063/1.5143190" class="external" target="_blank" rel="noopener noreferrer">
               doi.org/10.1063/1.5143190
             </a>
@@ -223,7 +355,8 @@
             Dynamics of Spatially Confined Bisphenol A Trimers in a Unimolecular Network on Ag(111)
           </p>
           <p class="paperinfo">
-            J.A. Lloyd, <i>et al.</i>: <i>Nano Letters</i> <b>16</b>(3), 1884&ndash;1889 (2016)<br/>
+            J.&hairsp;A. Lloyd, A.&hairsp;C. Papageorgiou, S. Fischer, S.&hairsp;C. Oh, Ö. Saǧlam, K. Diller, D.&hairsp;A. Duncan, F. Allegretti, F. Klappenberger,
+M. St&ouml;hr, R.&hairsp;J. Maurer, K. Reuter, J. Reichert and J.&hairsp;V. Barth: <i>Nano Letters</i> <b>16</b>(3), 1884&ndash;1889 (2016)<br/>
             <a href="https://doi.org/10.1021/acs.nanolett.5b05026" class="external" target="_blank" rel="noopener noreferrer">
               doi.org/10.1021/acs.nanolett.5b05026
             </a>
@@ -237,7 +370,7 @@
 
       <div class="myfooter">
         <p class="copystatement">
-          <span style="font-family:'Roboto'">&copy;</span> 2022 | Martin Stöhr
+          <span style="font-family:'Roboto'">&copy;</span> 2026 | Martin Stöhr
         </p>
       </div>
     </main>
